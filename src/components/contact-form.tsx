@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { Reveal } from "@/components/reveal";
 
 const INDUSTRIES = [
   { value: "Automotor", label: "Automotor / Concesionaria" },
@@ -36,9 +37,9 @@ export function ContactForm() {
       id="contacto"
       className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
-      <div className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
+      <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[0.95] mb-3 bg-gradient-to-b from-white via-blue-300 to-blue-500 bg-clip-text text-transparent light:bg-none light:text-gray-900">
+          <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[0.95] mb-3 text-white light:text-gray-900">
             Analicemos tu presencia digital.
           </h2>
           <p className="text-gray-400 light:text-gray-600 text-sm md:text-base">
@@ -120,13 +121,13 @@ export function ContactForm() {
           <div>
             <button
               type="submit"
-              className="w-full bg-white hover:bg-gray-100 text-black light:bg-gray-900 light:text-white light:hover:bg-gray-800 font-bold py-4 rounded-xl text-base transition-all"
+              className="w-full border border-transparent bg-white text-black light:bg-gray-900 light:text-white hover:scale-[1.02] hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900 font-bold py-4 rounded-full text-base transition-all duration-300"
             >
-              Enviar Datos y Agendar Sesión de Diagnóstico
+              Solicite una Consulta
             </button>
           </div>
         </form>
-      </div>
+      </Reveal>
     </section>
   );
 }

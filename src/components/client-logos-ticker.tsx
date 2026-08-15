@@ -17,7 +17,7 @@ export function ClientLogosTicker() {
   return (
     <section className="border-t border-gray-800/60 light:border-gray-200 py-16 transition-colors">
       <div className="max-w-[1440px] mx-auto px-6 text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] bg-gradient-to-b from-white via-blue-300 to-blue-500 bg-clip-text text-transparent light:bg-none light:text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
           Empresas que confiaron en nosotros
         </h2>
       </div>

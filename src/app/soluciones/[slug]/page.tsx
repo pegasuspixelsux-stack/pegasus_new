@@ -54,7 +54,7 @@ export default async function SolutionPage(
           <span className="mt-6 block text-xs font-semibold tracking-wider text-gray-500 uppercase">
             {solution.tag}
           </span>
-          <h1 className="mt-4 text-4xl md:text-6xl font-normal tracking-[-0.04em] leading-[0.95] mb-8 bg-gradient-to-b from-white via-blue-300 to-blue-500 bg-clip-text text-transparent light:bg-none light:text-gray-900">
+          <h1 className="mt-4 text-4xl md:text-6xl font-normal tracking-[-0.04em] leading-[0.95] mb-8 text-white light:text-gray-900">
             {solution.name}
           </h1>
 

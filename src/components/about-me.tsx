@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Reveal } from "@/components/reveal";
 
 const STACK = [
   "MySpace",
@@ -25,22 +26,26 @@ export function AboutMe() {
       className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors"
     >
       <div className="max-w-[1440px] mx-auto">
-        <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-center mb-16 bg-gradient-to-b from-white via-blue-300 to-blue-500 bg-clip-text text-transparent light:bg-none light:text-gray-900">
-          La mente detrás de Pegasus Pixels
-        </h2>
+        <Reveal>
+          <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-center mb-16 text-white light:text-gray-900">
+            La mente detrás de Pegasus Pixels
+          </h2>
+        </Reveal>
 
         <div className="max-w-[960px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
-          <div className="relative aspect-square overflow-hidden rounded-2xl border border-gray-700 light:border-gray-300 bg-gray-800 light:bg-gray-100">
-            <Image
-              src="/foto-perfil.jpg"
-              alt="La mente detrás de Pegasus Pixels"
-              fill
-              sizes="(min-width: 1024px) 33vw, 100vw"
-              className="object-cover object-[center_30%]"
-            />
-          </div>
+          <Reveal>
+            <div className="relative aspect-square overflow-hidden rounded-2xl border border-gray-700 light:border-gray-300 bg-gray-800 light:bg-gray-100">
+              <Image
+                src="/foto-perfil.jpg"
+                alt="La mente detrás de Pegasus Pixels"
+                fill
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                className="object-cover object-[center_30%]"
+              />
+            </div>
+          </Reveal>
 
-          <div className="lg:col-span-2 space-y-6">
+          <Reveal delay={0.15} className="lg:col-span-2 space-y-6">
             <p className="text-gray-300 light:text-gray-700 leading-relaxed">
               Mi camino en el mundo de la tecnología comenzó en la década de
               1990, importando, armando y reparando hardware cuando las
@@ -65,7 +70,7 @@ export function AboutMe() {
                 </span>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

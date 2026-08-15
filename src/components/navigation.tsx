@@ -27,12 +27,8 @@ export const Navigation = React.memo(function Navigation() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-lg font-bold text-white light:text-gray-900">
-              Pegasus Pixels
+              Pegasus <span className="text-blue-500">Pixels</span>
             </span>
-            <span
-              className="w-2 h-2 rounded-full bg-white light:bg-gray-900"
-              aria-hidden="true"
-            />
           </div>
 
           <div className="hidden md:flex items-center justify-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">

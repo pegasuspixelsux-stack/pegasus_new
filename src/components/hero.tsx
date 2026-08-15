@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { Reveal } from "@/components/reveal";
 
 export function Hero() {
   return (
@@ -8,7 +9,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative max-w-[1440px] mx-auto px-6 text-center">
+      <Reveal className="relative max-w-[1440px] mx-auto px-6 text-center">
         <span className="mb-4 block text-xs font-medium tracking-wide uppercase text-gray-500">
           Pegasus Pixels · Socio Tecnológico
         </span>
@@ -23,7 +24,7 @@ export function Hero() {
         <div>
           <a
             href="#soluciones"
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl font-semibold transition-all px-8 py-4 text-base bg-white text-black light:bg-gray-900 light:text-white hover:bg-gray-100 light:hover:bg-gray-800"
+            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent font-semibold transition-all duration-300 px-8 py-4 text-base bg-white text-black light:bg-gray-900 light:text-white hover:scale-105 hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900"
           >
             Elegir mi Industria y Empezar
           </a>
@@ -43,7 +44,7 @@ export function Hero() {
             5.0 en Google
           </span>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
