@@ -302,7 +302,7 @@ export default function DealioPage() {
       {/* Local approach */}
       <section className="py-20 px-6">
         <div className="max-w-[1200px] mx-auto">
-          <Reveal className="text-center mb-16">
+          <Reveal className="max-w-[960px] mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
               No vendemos software genérico. Implementamos soluciones en tu
               local.
