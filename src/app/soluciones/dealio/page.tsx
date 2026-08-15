@@ -119,7 +119,7 @@ const STEPS = [
 
 export default function DealioPage() {
   return (
-    <main className="flex flex-col flex-1 min-h-screen bg-black light:bg-white text-white light:text-gray-900 transition-colors">
+    <main className="flex flex-col flex-1 min-h-screen bg-blue-950 light:bg-white text-white light:text-gray-900 transition-colors">
       <Navigation />
 
       {/* Hero */}
@@ -141,7 +141,7 @@ export default function DealioPage() {
             Dealio · El Sistema Operativo para tu Automotora
           </span>
 
-          <h1 className="text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.05] mb-6 text-white light:text-gray-900">
+          <h1 className="text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.05] mb-6 bg-gradient-to-b from-blue-500 via-blue-300 to-white bg-clip-text text-transparent light:from-blue-700 light:via-blue-500 light:to-gray-900">
             Digitaliza tu stock, centraliza leads y acelera la venta de tus
             vehículos.
           </h1>
