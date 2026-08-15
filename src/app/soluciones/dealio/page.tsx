@@ -129,7 +129,7 @@ export default function DealioPage() {
           aria-hidden="true"
         />
 
-        <Reveal className="relative max-w-[960px] mx-auto text-center">
+        <Reveal className="relative max-w-[1200px] mx-auto text-center">
           <Link
             href="/#soluciones"
             className="text-sm text-gray-400 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors"
@@ -174,7 +174,7 @@ export default function DealioPage() {
 
       {/* Hero image */}
       <section className="px-6 pb-20">
-        <Reveal className="relative max-w-[960px] mx-auto">
+        <Reveal className="relative max-w-[1200px] mx-auto">
           <div className="relative h-80 md:h-[34rem] w-full overflow-hidden rounded-2xl border border-sky-500/30 light:border-sky-300">
             <Image
               src="/images_soluciones/Dealio.png"
@@ -193,7 +193,7 @@ export default function DealioPage() {
         id="como-funciona"
         className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 scroll-mt-24 transition-colors"
       >
-        <div className="max-w-[960px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
               El Flujo Comercial Completo
@@ -235,7 +235,7 @@ export default function DealioPage() {
 
       {/* 2. Características Clave del Sistema */}
       <section className="py-20 px-6">
-        <div className="max-w-[960px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
               Características Clave del Sistema
@@ -264,7 +264,7 @@ export default function DealioPage() {
 
       {/* 3. Tablero Gerencial y Control de Rendimiento */}
       <section className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
-        <div className="max-w-[960px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
               Dashboard para Managers
@@ -301,7 +301,7 @@ export default function DealioPage() {
 
       {/* Local approach */}
       <section className="py-20 px-6">
-        <div className="max-w-[960px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <Reveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
               No vendemos software genérico. Implementamos soluciones en tu

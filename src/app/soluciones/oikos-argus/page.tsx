@@ -139,7 +139,7 @@ export default function OikosArgusPage() {
           aria-hidden="true"
         />
 
-        <Reveal className="relative max-w-[960px] mx-auto text-center">
+        <Reveal className="relative max-w-[1200px] mx-auto text-center">
           <Link
             href="/#soluciones"
             className="text-sm text-gray-400 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors"
@@ -289,7 +289,7 @@ export default function OikosArgusPage() {
 
       {/* Local approach */}
       <section className="py-20 px-6">
-        <div className="max-w-[960px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <Reveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
               Desarrollo a medida con soporte presencial en Maldonado
