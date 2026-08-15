@@ -4,10 +4,17 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { SOLUTIONS, getSolution } from "@/lib/solutions-data";
+import {
+  DEDICATED_SOLUTION_PAGES,
+  SOLUTIONS,
+  SOLUTION_ACCENTS,
+  getSolution,
+} from "@/lib/solutions-data";
 
 export function generateStaticParams() {
-  return SOLUTIONS.map((solution) => ({ slug: solution.slug }));
+  return SOLUTIONS.filter(
+    (solution) => !DEDICATED_SOLUTION_PAGES.includes(solution.slug)
+  ).map((solution) => ({ slug: solution.slug }));
 }
 
 export async function generateMetadata(
@@ -37,6 +44,7 @@ export default async function SolutionPage(
   }
 
   const otherSolutions = SOLUTIONS.filter((s) => s.slug !== solution.slug);
+  const accent = SOLUTION_ACCENTS[solution.slug];
 
   return (
     <main className="flex flex-col flex-1 min-h-screen bg-black light:bg-white text-white light:text-gray-900 transition-colors">
@@ -51,7 +59,9 @@ export default async function SolutionPage(
             ← Volver a Soluciones
           </Link>
 
-          <span className="mt-6 block text-xs font-semibold tracking-wider text-gray-500 uppercase">
+          <span
+            className={`mt-6 block text-xs font-semibold tracking-wider uppercase ${accent.tagText}`}
+          >
             {solution.tag}
           </span>
           <h1 className="mt-4 text-4xl md:text-6xl font-normal tracking-[-0.04em] leading-[0.95] mb-8 text-white light:text-gray-900">
@@ -90,20 +100,25 @@ export default async function SolutionPage(
             Otras soluciones
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {otherSolutions.map((item) => (
-              <Link
-                key={item.slug}
-                href={`/soluciones/${item.slug}`}
-                className="bg-gray-900/80 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-6 rounded-2xl hover:border-gray-600 light:hover:border-gray-300 transition-colors"
-              >
-                <span className="text-xs font-semibold tracking-wider text-gray-500 uppercase mb-2 block">
-                  {item.tag}
-                </span>
-                <h3 className="text-lg font-bold text-white light:text-gray-900">
-                  {item.name}
-                </h3>
-              </Link>
-            ))}
+            {otherSolutions.map((item) => {
+              const otherAccent = SOLUTION_ACCENTS[item.slug];
+              return (
+                <Link
+                  key={item.slug}
+                  href={`/soluciones/${item.slug}`}
+                  className={`bg-gray-900/80 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-6 rounded-2xl transition-colors ${otherAccent.hoverBorder}`}
+                >
+                  <span
+                    className={`text-xs font-semibold tracking-wider uppercase mb-2 block ${otherAccent.tagText}`}
+                  >
+                    {item.tag}
+                  </span>
+                  <h3 className="text-lg font-bold text-white light:text-gray-900">
+                    {item.name}
+                  </h3>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

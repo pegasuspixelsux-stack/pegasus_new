@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SOLUTIONS } from "@/lib/solutions-data";
+import { SOLUTIONS, SOLUTION_ACCENTS } from "@/lib/solutions-data";
 import { Reveal } from "@/components/reveal";
 
 export function Solutions() {
@@ -21,37 +21,42 @@ export function Solutions() {
         </Reveal>
 
         <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-3 lg2:grid-cols-4 gap-6">
-          {SOLUTIONS.map((item, index) => (
-            <Reveal key={item.slug} delay={index * 0.1}>
-              <Link
-                href={`/soluciones/${item.slug}`}
-                className="overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 rounded-2xl hover:border-gray-600 light:hover:border-gray-300 transition-all duration-300 flex flex-col group h-full"
-              >
-                {item.image && (
-                  <div className="relative h-40 w-full">
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      fill
-                      sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
+          {SOLUTIONS.map((item, index) => {
+            const accent = SOLUTION_ACCENTS[item.slug];
+            return (
+              <Reveal key={item.slug} delay={index * 0.1}>
+                <Link
+                  href={`/soluciones/${item.slug}`}
+                  className={`overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 rounded-2xl transition-all duration-300 flex flex-col group h-full ${accent.hoverBorder}`}
+                >
+                  {item.image && (
+                    <div className="relative h-40 w-full">
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        fill
+                        sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
+                  <div className="p-8 flex-1">
+                    <span
+                      className={`text-xs font-semibold tracking-wider uppercase mb-3 block ${accent.tagText}`}
+                    >
+                      {item.tag}
+                    </span>
+                    <h3 className="text-xl font-bold text-white light:text-gray-900 mb-3 transition-colors">
+                      {item.name}
+                    </h3>
+                    <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
-                )}
-                <div className="p-8 flex-1">
-                  <span className="text-xs font-semibold tracking-wider text-gray-500 uppercase mb-3 block">
-                    {item.tag}
-                  </span>
-                  <h3 className="text-xl font-bold text-white light:text-gray-900 mb-3 transition-colors">
-                    {item.name}
-                  </h3>
-                  <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              </Link>
-            </Reveal>
-          ))}
+                </Link>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>
