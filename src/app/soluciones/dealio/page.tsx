@@ -304,8 +304,9 @@ export default function DealioPage() {
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-[960px] mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
-              No vendemos software genérico. Implementamos soluciones en tu
-              local.
+              No vendemos software genérico.
+              <br />
+              Implementamos soluciones en tu local.
             </h2>
             <p className="text-gray-400 light:text-gray-600 text-lg">
               Sabemos cómo se mueve el mercado automotor en la zona esteña. No
@@ -317,10 +318,10 @@ export default function DealioPage() {
             {STEPS.map((step, index) => (
               <Reveal key={step.number} delay={index * 0.15}>
                 <div>
-                  <span className="text-sm font-mono text-sky-400 light:text-sky-600">
+                  <span className="block text-[3.5rem] font-mono font-bold leading-none text-sky-400 light:text-sky-600">
                     {step.number}
                   </span>
-                  <h3 className="text-lg font-bold text-white light:text-gray-900 mt-2 mb-3">
+                  <h3 className="text-lg font-bold text-white light:text-gray-900 mt-4 mb-3">
                     {step.title}
                   </h3>
                   <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
