@@ -175,7 +175,7 @@ export default function DealioPage() {
       {/* Hero image */}
       <section className="px-6 pb-20">
         <Reveal className="relative max-w-[1200px] mx-auto">
-          <div className="relative h-80 md:h-[34rem] w-full overflow-hidden rounded-2xl border border-sky-500/30 light:border-sky-300">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-sky-500/30 light:border-sky-300">
             <Image
               src="/images_soluciones/Dealio.png"
               alt="Showroom digitalizado con Dealio"
@@ -209,17 +209,12 @@ export default function DealioPage() {
           </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {FLOW.map(({ number, icon: Icon, title, description }, index) => (
+            {FLOW.map(({ number, title, description }, index) => (
               <Reveal key={title} delay={index * 0.1}>
                 <div className="bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-sky-400/30 bg-sky-400/10 text-sky-400 light:text-sky-600">
-                      <Icon size={18} strokeWidth={1.75} />
-                    </div>
-                    <span className="text-sm font-mono text-sky-400 light:text-sky-600">
-                      {number}
-                    </span>
-                  </div>
+                  <span className="block mb-4 text-[3.5rem] font-mono font-bold leading-none text-sky-400 light:text-sky-600">
+                    {number}
+                  </span>
                   <h3 className="text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
                   </h3>
