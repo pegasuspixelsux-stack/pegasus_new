@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  AlertTriangle,
-  ArrowLeftRight,
-  Boxes,
-  Filter,
-  Gauge,
+  Blend,
+  Database,
+  Eye,
+  Handshake,
   LineChart,
-  ShieldCheck,
-  TrendingDown,
-  TrendingUp,
-  Users,
+  Megaphone,
+  RefreshCw,
+  Target,
+  Workflow,
+  Zap,
 } from "lucide-react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
@@ -19,89 +19,80 @@ import { Reveal } from "@/components/reveal";
 import { DealioLeadForm } from "./dealio-lead-form";
 
 export const metadata: Metadata = {
-  title: "Dealio — Sistema para Automotoras | Pegasus Pixels",
+  title: "Dealio — El Sistema Operativo para tu Automotora | Pegasus Pixels",
   description:
-    "Digitaliza tu stock, centraliza leads y acelera la venta de vehículos en Maldonado y Punta del Este con Dealio.",
+    "Convierte el tráfico de redes sociales en ventas reales sin perder un solo lead. Inventario en tiempo real, pipeline comercial y tablero gerencial para tu automotora.",
 };
 
-const PAIN_POINTS = [
+const FLOW = [
   {
-    icon: AlertTriangle,
-    title: "El caos de los leads",
+    number: "01",
+    icon: Megaphone,
+    title: "Módulo de Adquisición (Redes Sociales)",
     description:
-      "Clientes que escriben por MercadoLibre, Instagram y WhatsApp. Sin un embudo claro, las consultas se pierden y los vendedores no hacen seguimiento.",
+      "El tráfico generado por tus campañas de marketing y anuncios en redes desemboca en un sistema diseñado para no dejar escapar ningún interesado.",
   },
   {
-    icon: TrendingDown,
-    title: "Stock desactualizado",
+    number: "02",
+    icon: Database,
+    title: "El Hub Central (Dealio)",
     description:
-      "Autos que ya se señaron o vendieron pero siguen figurando online, o vehículos nuevos que tardan días en subirse a la web.",
+      "Funciona como el centro neurálgico donde reside todo el inventario actualizado en tiempo real y donde los leads de WhatsApp, web e Instagram se ordenan de forma automática.",
   },
   {
-    icon: Boxes,
-    title: "Pérdida de margen en remozamiento",
+    number: "03",
+    icon: Workflow,
+    title: "El Pipeline de Seguimiento y Cierre",
     description:
-      "Costos ocultos de detailing, chapa, pintura y mecánica ligera que no se registran por unidad, comiéndote la rentabilidad de la reventa.",
+      "Un proceso estructurado donde el lead se captura, se contesta de inmediato con fichas técnicas automáticas, y se lleva paso a paso por las etapas de seguimiento, negociación y resolución de objeciones (ya sea evaluar una permuta o coordinar la entrega).",
   },
 ];
 
 const FEATURES = [
   {
-    icon: Boxes,
-    title: "Inventario Centralizado y Sincronizado",
+    icon: RefreshCw,
+    title: "Inventario en Tiempo Real",
     description:
-      "Cada vehículo que entra al salón se registra una sola vez con su ficha técnica, costos, fotos y estado de documentación. Se publica automáticamente en tu web sin depender de portales lentos.",
+      "Actualiza precios, estado y disponibilidad de las unidades al instante. Evita que un cliente consulte por un vehículo ya señado.",
   },
   {
-    icon: ArrowLeftRight,
-    title: "Gestión de Permutas y Tasaciones",
+    icon: Zap,
+    title: "Captura y Respuesta Inmediata",
     description:
-      "Registra de forma limpia los vehículos tomados como parte de pago, controlando su valuación real y el estado de reacondicionamiento necesario antes de ponerlos en piso.",
+      "Facilita el primer contacto con el interesado, entregando especificaciones técnicas precisas y registrando sus datos para ingresarlo directo al flujo de trabajo del equipo de ventas.",
   },
   {
-    icon: Filter,
-    title: "Embudo de Ventas para Vendedores",
+    icon: Handshake,
+    title: "Gestión de Objeciones en el Terreno",
     description:
-      "Cada lead de WhatsApp o web cae directo en el pipeline del equipo de ventas. Se sabe exactamente qué asesor tiene asignado cada cliente y en qué etapa de la negociación está.",
+      "Los vendedores cuentan con el historial y las herramientas para destrabar los obstáculos habituales del comprador (tasación de permutas, financiación o condiciones de entrega), ganando la confianza necesaria para cerrar el trato.",
+  },
+  {
+    icon: Blend,
+    title: "Modelo de Operación Híbrido",
+    description:
+      "Potencia la tecnología con el factor humano. El sistema estructura y organiza el trabajo, pero aprovecha la capacidad de ejecución y persuasión física del vendedor en la negociación final.",
   },
 ];
 
-const RESULTS = [
+const DASHBOARD = [
   {
-    icon: Gauge,
-    title: "Rotación de stock más rápida",
+    icon: Eye,
+    title: "Monitoreo de Asesores",
     description:
-      "Publicá un vehículo en minutos, no días. Menos tiempo en el salón significa menos capital inmovilizado.",
-  },
-  {
-    icon: Users,
-    title: "Cero leads perdidos",
-    description:
-      "Cada consulta de WhatsApp, Instagram o web cae en el pipeline correcto, con un responsable asignado desde el primer mensaje.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Márgenes protegidos",
-    description:
-      "Costos de reacondicionamiento registrados por unidad: sabés exactamente cuánto te cuesta cada vehículo antes de venderlo.",
+      "Visualiza qué leads entraron a cada vendedor, cómo es su comportamiento de seguimiento y qué tasa de conversión maneja cada integrante del equipo.",
   },
   {
     icon: LineChart,
-    title: "Decisiones con datos",
+    title: "Medición del Retorno de Inversión (ROI)",
     description:
-      "Visibilidad total de inventario, permutas y pipeline de ventas en tiempo real, sin depender de planillas dispersas.",
+      "Permite medir exactamente cuántos contactos genera cada peso invertido en marketing, qué porcentaje de esos contactos se aprovechan y cuáles terminan convirtiéndose en una venta real.",
   },
   {
-    icon: TrendingUp,
-    title: "Equipo de ventas más productivo",
+    icon: Target,
+    title: "Optimización Continua",
     description:
-      "Tus vendedores saben qué hacer con cada lead, sin confusión ni consultas que se caen entre las grietas.",
-  },
-  {
-    icon: Boxes,
-    title: "Imagen profesional",
-    description:
-      "Tu salón se ve —y opera— como una marca seria: ficha técnica prolija, fotos consistentes y respuestas rápidas.",
+      "Detecta dónde se caen los prospectos en el embudo comercial para ajustar la estrategia y lograr un aprovechamiento máximo de cada consulta.",
   },
 ];
 
@@ -147,19 +138,21 @@ export default function DealioPage() {
           </Link>
 
           <span className="mt-8 mb-4 block text-xs font-medium tracking-wide uppercase text-gray-500">
-            Dealio · Sistema para Automotoras
+            Dealio · El Sistema Operativo para tu Automotora
           </span>
 
           <h1 className="text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.05] mb-6 text-white light:text-gray-900">
-            Digitaliza tu stock, centraliza leads y acelera la venta de
-            vehículos en Maldonado
+            Digitaliza tu stock, centraliza leads y acelera la venta de tus
+            vehículos.
           </h1>
 
           <p className="text-lg text-gray-400 light:text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Olvídate del Excel y de perder consultas de WhatsApp. Dealio es el
-            sistema de gestión e inventario web diseñado específicamente para
-            automotoras multimarca que quieren profesionalizar su salón,
-            controlar el estado de sus unidades y vender más rápido.
+            Dealio es la plataforma integral diseñada para automotoras
+            multimarca que invierten en redes sociales pero pierden
+            rentabilidad por un seguimiento desorganizado. Centraliza tu
+            inventario en tiempo real, captura consultas al instante, guía al
+            vendedor en el pipeline comercial y dale al manager el control
+            total del rendimiento publicitario.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -173,7 +166,7 @@ export default function DealioPage() {
               href="#como-funciona"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-gray-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-4 text-base text-white light:text-gray-900 hover:border-gray-500 light:hover:border-gray-500"
             >
-              Ver Demo en Vivo
+              Ver Demo Interactiva en Vivo
             </a>
           </div>
         </Reveal>
@@ -195,21 +188,37 @@ export default function DealioPage() {
         </Reveal>
       </section>
 
-      {/* Pain points */}
-      <section className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
+      {/* 1. El Flujo Comercial Completo */}
+      <section
+        id="como-funciona"
+        className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 scroll-mt-24 transition-colors"
+      >
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
-              El problema de vender autos hoy con herramientas improvisadas
+            <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
+              El Flujo Comercial Completo
+            </span>
+            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+              De la Red Social al Cierre
             </h2>
+            <p className="mt-4 text-gray-400 light:text-gray-600 text-base">
+              La venta moderna de vehículos no empieza en el salón; empieza
+              en las plataformas de social media. Dealio conecta todo el
+              proceso en tres etapas clave.
+            </p>
           </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {PAIN_POINTS.map(({ icon: Icon, title, description }, index) => (
+            {FLOW.map(({ number, icon: Icon, title, description }, index) => (
               <Reveal key={title} delay={index * 0.1}>
                 <div className="bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
-                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-red-500/30 bg-red-500/10 text-red-400 light:text-red-600">
-                    <Icon size={18} strokeWidth={1.75} />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-sky-400/30 bg-sky-400/10 text-sky-400 light:text-sky-600">
+                      <Icon size={18} strokeWidth={1.75} />
+                    </div>
+                    <span className="text-sm font-mono text-sky-400 light:text-sky-600">
+                      {number}
+                    </span>
                   </div>
                   <h3 className="text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
@@ -224,18 +233,18 @@ export default function DealioPage() {
         </div>
       </section>
 
-      {/* Solution */}
-      <section id="como-funciona" className="py-20 px-6 scroll-mt-24">
+      {/* 2. Características Clave del Sistema */}
+      <section className="py-20 px-6">
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
-              Una plataforma robusta, diseñada para operar sin fricción
+              Características Clave del Sistema
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-4 gap-6">
             {FEATURES.map(({ icon: Icon, title, description }, index) => (
-              <Reveal key={title} delay={index * 0.1}>
+              <Reveal key={title} delay={(index % 4) * 0.1}>
                 <div className="bg-gray-900/30 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
                   <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 light:border-gray-300 bg-gray-800/50 light:bg-gray-100 text-white light:text-gray-900">
                     <Icon size={18} strokeWidth={1.75} />
@@ -253,21 +262,26 @@ export default function DealioPage() {
         </div>
       </section>
 
-      {/* Results & efficiency */}
+      {/* 3. Tablero Gerencial y Control de Rendimiento */}
       <section className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
-              Resultados
+              Dashboard para Managers
             </span>
             <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
-              Así cambia la eficiencia de tu concesionaria
+              Tablero Gerencial y Control de Rendimiento
             </h2>
+            <p className="mt-4 text-gray-400 light:text-gray-600 text-base">
+              El director o gerente del dealership tiene acceso a un tablero
+              de control centralizado con visibilidad absoluta de toda la
+              operación.
+            </p>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-3 gap-6">
-            {RESULTS.map(({ icon: Icon, title, description }, index) => (
-              <Reveal key={title} delay={(index % 3) * 0.1}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {DASHBOARD.map(({ icon: Icon, title, description }, index) => (
+              <Reveal key={title} delay={index * 0.1}>
                 <div className="bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
                   <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-sky-400/30 bg-sky-400/10 text-sky-400 light:text-sky-600">
                     <Icon size={18} strokeWidth={1.75} />
@@ -327,10 +341,13 @@ export default function DealioPage() {
         <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[0.95] mb-3 text-white light:text-gray-900">
-              ¿Listo para acelerar la rotación de tu salón?
+              ¿Listo para profesionalizar la gestión comercial de tu
+              automotora?
             </h2>
             <p className="text-gray-400 light:text-gray-600 text-sm md:text-base">
-              Hablemos de cómo digitalizar tu inventario esta misma semana.
+              Dejá atrás el caos de los chats sueltos y las planillas
+              desconectadas. Lleva el control absoluto de tu stock y de tus
+              vendedores.
             </p>
           </div>
 
