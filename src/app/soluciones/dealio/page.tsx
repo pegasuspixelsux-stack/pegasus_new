@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  Blend,
   Database,
   Eye,
   Handshake,
@@ -66,12 +65,6 @@ const FEATURES = [
     title: "Gestión de Objeciones en el Terreno",
     description:
       "Los vendedores cuentan con el historial y las herramientas para destrabar los obstáculos habituales del comprador (tasación de permutas, financiación o condiciones de entrega), ganando la confianza necesaria para cerrar el trato.",
-  },
-  {
-    icon: Blend,
-    title: "Modelo de Operación Híbrido",
-    description:
-      "Potencia la tecnología con el factor humano. El sistema estructura y organiza el trabajo, pero aprovecha la capacidad de ejecución y persuasión física del vendedor en la negociación final.",
   },
 ];
 
@@ -211,14 +204,18 @@ export default function DealioPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {FLOW.map(({ number, title, description }, index) => (
               <Reveal key={title} delay={index * 0.1}>
-                <div className="bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
-                  <span className="block mb-4 text-[3.5rem] font-mono font-bold leading-none text-sky-400 light:text-sky-600">
+                <div className="relative overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
+                  <div
+                    className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
+                    aria-hidden="true"
+                  />
+                  <span className="relative block mb-4 text-[3.5rem] font-mono font-bold leading-none text-sky-400 light:text-sky-600">
                     {number}
                   </span>
-                  <h3 className="text-lg font-bold text-white light:text-gray-900 mb-3">
+                  <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
                   </h3>
-                  <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                  <p className="relative text-gray-400 light:text-gray-600 text-sm leading-relaxed">
                     {description}
                   </p>
                 </div>
@@ -237,17 +234,21 @@ export default function DealioPage() {
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
             {FEATURES.map(({ icon: Icon, title, description }, index) => (
-              <Reveal key={title} delay={(index % 4) * 0.1}>
-                <div className="bg-gray-900/30 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
-                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 light:border-gray-300 bg-gray-800/50 light:bg-gray-100 text-white light:text-gray-900">
+              <Reveal key={title} delay={(index % 3) * 0.1}>
+                <div className="relative overflow-hidden bg-gray-900/30 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
+                  <div
+                    className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
+                    aria-hidden="true"
+                  />
+                  <div className="relative mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 light:border-gray-300 bg-gray-800/50 light:bg-gray-100 text-white light:text-gray-900">
                     <Icon size={18} strokeWidth={1.75} />
                   </div>
-                  <h3 className="text-lg font-bold text-white light:text-gray-900 mb-3">
+                  <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
                   </h3>
-                  <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                  <p className="relative text-gray-400 light:text-gray-600 text-sm leading-relaxed">
                     {description}
                   </p>
                 </div>
@@ -277,14 +278,18 @@ export default function DealioPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {DASHBOARD.map(({ icon: Icon, title, description }, index) => (
               <Reveal key={title} delay={index * 0.1}>
-                <div className="bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
-                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-sky-400/30 bg-sky-400/10 text-sky-400 light:text-sky-600">
+                <div className="relative overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
+                  <div
+                    className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
+                    aria-hidden="true"
+                  />
+                  <div className="relative mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-sky-400/30 bg-sky-400/10 text-sky-400 light:text-sky-600">
                     <Icon size={18} strokeWidth={1.75} />
                   </div>
-                  <h3 className="text-lg font-bold text-white light:text-gray-900 mb-3">
+                  <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
                   </h3>
-                  <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                  <p className="relative text-gray-400 light:text-gray-600 text-sm leading-relaxed">
                     {description}
                   </p>
                 </div>
