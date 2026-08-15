@@ -175,7 +175,7 @@ export default function DealioPage() {
       {/* Hero image */}
       <section className="px-6 pb-20">
         <Reveal className="relative max-w-[1100px] mx-auto">
-          <div className="relative h-64 md:h-[28rem] w-full overflow-hidden rounded-2xl border border-sky-500/30 light:border-sky-300">
+          <div className="relative h-80 md:h-[34rem] w-full overflow-hidden rounded-2xl border border-sky-500/30 light:border-sky-300">
             <Image
               src="/images_soluciones/Dealio.png"
               alt="Showroom digitalizado con Dealio"
