@@ -20,9 +20,21 @@ const ctaClasses =
 export const Navigation = React.memo(function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 w-full z-50 border-b border-gray-800/50 light:border-gray-200 bg-black/80 light:bg-white/80 backdrop-blur-md transition-colors">
+    <header
+      className={`fixed top-0 w-full z-50 border-b border-gray-800/50 light:border-gray-200 backdrop-blur-md transition-colors ${
+        scrolled ? "bg-black/40 light:bg-white/40" : "bg-black/80 light:bg-white/80"
+      }`}
+    >
       <nav className="max-w-[1440px] mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">

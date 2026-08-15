@@ -10,7 +10,7 @@ export function Hero() {
       />
 
       <Reveal className="relative max-w-[1440px] mx-auto px-6 text-center">
-        <span className="mb-4 block text-xs font-medium tracking-wide uppercase text-gray-500">
+        <span className="mb-4 block text-xs font-medium tracking-wide uppercase text-white light:text-gray-900">
           Pegasus Pixels · Socio Tecnológico
         </span>
         <h1 className="max-w-[960px] mx-auto text-5xl sm2:text-6xl md:text-7xl font-normal tracking-[-0.04em] leading-[0.95] mb-6 bg-gradient-to-b from-white via-blue-300 to-blue-500 bg-clip-text text-transparent light:bg-none light:text-gray-900">
