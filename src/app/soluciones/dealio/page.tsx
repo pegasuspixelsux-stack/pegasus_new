@@ -137,28 +137,22 @@ export default function DealioPage() {
 
       {/* Capacidades Operativas Principales */}
       <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
-        <div className="max-w-[1100px] mx-auto">
-          <Reveal className="text-center mb-16">
+        <div className="max-w-[960px] mx-auto">
+          <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               Capacidades Operativas Principales
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="space-y-10">
             {CAPABILITIES.map(({ title, description }, index) => (
-              <Reveal key={title} delay={index * 0.1} className="h-full">
-                <div className="relative h-full overflow-hidden bg-blue-900/40 light:bg-white border border-blue-800 light:border-gray-200 p-8 rounded-2xl">
-                  <div
-                    className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
-                    aria-hidden="true"
-                  />
-                  <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
-                    {title}
-                  </h3>
-                  <p className="relative text-gray-300 light:text-gray-600 text-sm leading-relaxed">
-                    {description}
-                  </p>
-                </div>
+              <Reveal key={title} delay={index * 0.1}>
+                <h3 className="text-xl font-normal text-white light:text-gray-900 mb-3">
+                  {title}
+                </h3>
+                <p className="text-gray-300 light:text-gray-600 leading-relaxed">
+                  {description}
+                </p>
               </Reveal>
             ))}
           </div>
@@ -167,14 +161,14 @@ export default function DealioPage() {
 
       {/* Recorrido Funcional y de Pantallas */}
       <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
-        <div className="max-w-[1100px] mx-auto">
-          <Reveal className="text-center mb-16">
+        <div className="max-w-[960px] mx-auto">
+          <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               Recorrido Funcional y de Pantallas
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+          <div className="space-y-12">
             {WALKTHROUGH.map((section, index) => (
               <Reveal key={section.title} delay={index * 0.15}>
                 <h3 className="text-xl font-normal text-white light:text-gray-900 mb-6">
@@ -201,28 +195,22 @@ export default function DealioPage() {
 
       {/* Ventajas Competitivas */}
       <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
-        <div className="max-w-[1100px] mx-auto">
-          <Reveal className="text-center mb-16">
+        <div className="max-w-[960px] mx-auto">
+          <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               Ventajas Competitivas
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="space-y-10">
             {ADVANTAGES.map(({ title, description }, index) => (
-              <Reveal key={title} delay={index * 0.1} className="h-full">
-                <div className="relative h-full overflow-hidden bg-blue-900/40 light:bg-white border border-blue-800 light:border-gray-200 p-8 rounded-2xl">
-                  <div
-                    className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
-                    aria-hidden="true"
-                  />
-                  <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
-                    {title}
-                  </h3>
-                  <p className="relative text-gray-300 light:text-gray-600 text-sm leading-relaxed">
-                    {description}
-                  </p>
-                </div>
+              <Reveal key={title} delay={index * 0.1}>
+                <h3 className="text-xl font-normal text-white light:text-gray-900 mb-3">
+                  {title}
+                </h3>
+                <p className="text-gray-300 light:text-gray-600 leading-relaxed">
+                  {description}
+                </p>
               </Reveal>
             ))}
           </div>
