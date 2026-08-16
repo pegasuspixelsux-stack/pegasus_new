@@ -18,7 +18,7 @@ export function Hero() {
         </h1>
         <p className="text-lg md:text-xl text-gray-400 light:text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
           Implementamos sistemas validados para Concesionarias, Inmobiliarias y
-          Restaurantes, entrenamos a tu equipo en la cancha y mantenemos tu
+          Restaurantes, entrenamos a tu equipo en tu local y mantenemos tu
           infraestructura activa a largo plazo.
         </p>
         <div>

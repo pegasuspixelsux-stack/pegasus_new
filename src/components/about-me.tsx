@@ -54,7 +54,7 @@ export function AboutMe() {
 
         <Reveal delay={0.1} className="max-w-[960px] mx-auto">
           <div>
-            <div className="float-none w-1/2 mx-auto mb-6 sm:float-left sm:w-1/6 sm:mx-0 sm:mr-8 sm:mb-4">
+            <div className="float-none w-full mb-6 sm:float-left sm:w-1/6 sm:mx-0 sm:mr-8 sm:mb-4">
               <div className="relative aspect-square overflow-hidden rounded-2xl border border-gray-700 light:border-gray-300 bg-gray-800 light:bg-gray-100">
                 <Image
                   src="/foto-perfil.jpg"
