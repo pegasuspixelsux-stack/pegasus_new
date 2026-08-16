@@ -7,6 +7,7 @@ import { Services } from "@/components/services";
 import { OperatorAdvantage } from "@/components/operator-advantage";
 import { ClientLogosTicker } from "@/components/client-logos-ticker";
 import { AboutMe } from "@/components/about-me";
+import { GrowthDiagnostic } from "@/components/growth-diagnostic";
 import { ContactForm } from "@/components/contact-form";
 import { Blog } from "@/components/blog";
 import { Footer } from "@/components/footer";
@@ -23,6 +24,7 @@ export default function Home() {
       <Solutions />
       <ClientLogosTicker />
       <AboutMe />
+      <GrowthDiagnostic />
       <ContactForm />
       <Blog />
       <Footer />
