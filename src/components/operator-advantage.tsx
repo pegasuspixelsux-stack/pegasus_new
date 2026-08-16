@@ -8,8 +8,11 @@ export function OperatorAdvantage() {
       className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
       <div className="max-w-[960px] mx-auto">
-        <Reveal>
-          <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-center mb-16 text-white light:text-gray-900">
+        <Reveal className="text-center mb-16">
+          <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
+            Infraestructura
+          </span>
+          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
             ¿Qué significa tener un Socio Tecnológico?
           </h2>
         </Reveal>

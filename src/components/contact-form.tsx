@@ -39,7 +39,10 @@ export function ContactForm() {
     >
       <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-5 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[1.2] mb-4 text-white light:text-gray-900">
+          <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
+            Contacto
+          </span>
+          <h2 className="mt-4 text-3xl font-normal tracking-[-0.04em] leading-[1.2] mb-4 text-white light:text-gray-900">
             Analicemos tu presencia digital.
           </h2>
           <p className="text-gray-400 light:text-gray-600 text-sm md:text-base">

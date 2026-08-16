@@ -44,8 +44,11 @@ export function AboutMe() {
       className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors"
     >
       <div className="max-w-[1440px] mx-auto">
-        <Reveal>
-          <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-center mb-16 text-white light:text-gray-900">
+        <Reveal className="text-center mb-16">
+          <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
+            Quién Soy
+          </span>
+          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
             Quién está detrás de Pegasus Pixels
             <br className="hidden sm:block" />
             <span className="text-gray-500">(Y por qué te importa)</span>
