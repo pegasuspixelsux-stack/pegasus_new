@@ -54,7 +54,7 @@ export function Blog() {
                 <div className="text-xs text-gray-500 mb-4">
                   {post.author} · {post.date}
                 </div>
-                <h3 className="text-xl font-bold text-white light:text-gray-900 mb-3">
+                <h3 className="text-xl font-normal text-white light:text-gray-900 mb-3">
                   {post.title}
                 </h3>
                 <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
