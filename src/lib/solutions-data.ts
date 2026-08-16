@@ -40,7 +40,7 @@ export function getSolution(slug: string): Solution | undefined {
 
 // Slugs with their own dedicated page (app/soluciones/<slug>/page.tsx)
 // instead of the generic app/soluciones/[slug]/page.tsx template.
-export const DEDICATED_SOLUTION_PAGES = ["dealio", "oikos-argus"];
+export const DEDICATED_SOLUTION_PAGES = ["dealio", "oikos-argus", "hermio"];
 
 // Literal Tailwind classes (Tailwind's compiler needs full class names in
 // source, not interpolated strings) used to give each solution its own
