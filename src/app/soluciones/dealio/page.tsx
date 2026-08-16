@@ -113,13 +113,13 @@ export default function DealioPage() {
             ← Volver a Soluciones
           </Link>
 
-          <span className="mt-8 mb-4 block text-xs font-medium tracking-wide uppercase text-gray-400 light:text-gray-600">
+          <h1 className="mt-8 text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
             Dealio
-          </span>
-
-          <h1 className="text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.15] mb-6 text-white light:text-gray-900">
-            Infraestructura digital para concesionarias de alto rendimiento
           </h1>
+
+          <p className="text-2xl md:text-3xl font-normal tracking-[-0.02em] leading-snug mb-6 text-gray-300 light:text-gray-700">
+            Infraestructura digital para concesionarias de alto rendimiento
+          </p>
 
           <p className="text-lg text-gray-300 light:text-gray-600 max-w-2xl leading-relaxed">
             No es un sitio web estático ni un software genérico. Dealio es un
