@@ -19,7 +19,7 @@ export function OperatorAdvantage() {
             <div className="relative overflow-hidden bg-gray-900/40 light:bg-red-50 border border-red-500/20 light:border-red-200 rounded-2xl h-full">
               <div className="relative h-72 w-full">
                 <Image
-                  src="/images_ticker/accounting-software.jfif"
+                  src="/images_ticker/accounting-software.jpg"
                   alt="Software tradicional empaquetado"
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"

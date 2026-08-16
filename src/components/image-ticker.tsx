@@ -6,7 +6,7 @@ const IMAGES = [
   { src: "/images_ticker/classic-mustang.png", alt: "Auto clásico en la ruta" },
   { src: "/images_ticker/real-estate-poolside.png", alt: "Propiedad frente al mar con piscina infinita" },
   { src: "/images_ticker/real-estate-team.png", alt: "Equipo de agentes inmobiliarios" },
-  { src: "/images_ticker/accounting-software.jfif", alt: "Software de gestión contable" },
+  { src: "/images_ticker/accounting-software.jpg", alt: "Software de gestión contable" },
 ] as const;
 
 // Duplicated once so the track can loop seamlessly at -50%.

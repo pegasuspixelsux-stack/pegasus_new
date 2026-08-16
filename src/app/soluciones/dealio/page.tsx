@@ -112,7 +112,7 @@ const STEPS = [
 
 export default function DealioPage() {
   return (
-    <main className="flex flex-col flex-1 min-h-screen bg-blue-950 light:bg-white text-white light:text-gray-900 transition-colors">
+    <main className="flex flex-col flex-1 min-h-screen bg-[#040a1a] light:bg-white text-white light:text-gray-900 transition-colors">
       <Navigation />
 
       {/* Hero */}
