@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
+import { OtherSolutions } from "@/components/other-solutions";
 
 export const metadata: Metadata = {
   title: "Hermio — Infraestructura Digital para Restaurantes y Delivery | Pegasus Pixels",
@@ -182,6 +183,8 @@ export default function HermioPage() {
           </Reveal>
         </div>
       </section>
+
+      <OtherSolutions currentSlug="hermio" />
 
       {/* Closing CTA */}
       <section className="py-28 px-6 transition-colors">

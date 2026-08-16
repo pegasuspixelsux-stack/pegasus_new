@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
+import { OtherSolutions } from "@/components/other-solutions";
 
 export const metadata: Metadata = {
   title: "Dealio — Infraestructura para Concesionarias de Alto Rendimiento | Pegasus Pixels",
@@ -215,6 +216,8 @@ export default function DealioPage() {
           </div>
         </div>
       </section>
+
+      <OtherSolutions currentSlug="dealio" />
 
       {/* Closing CTA */}
       <section className="py-28 px-6 transition-colors">

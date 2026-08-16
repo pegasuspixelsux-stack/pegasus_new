@@ -2,28 +2,25 @@ import { SOLUTIONS } from "@/lib/solutions-data";
 import { SolutionCard } from "@/components/solution-card";
 import { Reveal } from "@/components/reveal";
 
-export function Solutions() {
+export function OtherSolutions({ currentSlug }: { currentSlug: string }) {
+  const others = SOLUTIONS.filter((item) => item.slug !== currentSlug);
+
+  if (others.length === 0) return null;
+
   return (
-    <section
-      id="soluciones"
-      className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors"
-    >
+    <section className="py-24 px-6 transition-colors">
       <div className="max-w-[1260px] mx-auto">
         <Reveal className="text-center mb-16">
           <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
             Soluciones
           </span>
-          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
-            Plataformas Diseñadas para Rendir desde el Día Uno
+          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
+            Otras Soluciones
           </h2>
-          <p className="text-gray-400 light:text-gray-600 text-lg">
-            Infraestructura tecnológica especializada adaptada a las reglas
-            reales de tu sector.
-          </p>
         </Reveal>
 
         <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SOLUTIONS.map((item, index) => (
+          {others.map((item, index) => (
             <Reveal key={item.slug} delay={index * 0.1}>
               <SolutionCard item={item} />
             </Reveal>

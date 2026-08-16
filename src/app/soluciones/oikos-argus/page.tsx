@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
+import { OtherSolutions } from "@/components/other-solutions";
 
 export const metadata: Metadata = {
   title: "Oikos — Infraestructura Comercial para Inmobiliarias | Pegasus Pixels",
@@ -176,6 +177,8 @@ export default function OikosArgusPage() {
           </Reveal>
         </div>
       </section>
+
+      <OtherSolutions currentSlug="oikos-argus" />
 
       {/* Closing CTA */}
       <section className="py-28 px-6 transition-colors">
