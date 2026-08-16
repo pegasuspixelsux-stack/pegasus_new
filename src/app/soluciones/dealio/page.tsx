@@ -159,7 +159,7 @@ export default function DealioPage() {
             </a>
             <a
               href="#como-funciona"
-              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 whitespace-nowrap rounded-full border border-blue-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-5 sm:py-4 text-lg sm:text-base text-white light:text-gray-900 hover:border-blue-400 light:hover:border-gray-500"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 whitespace-nowrap rounded-full border border-blue-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-5 sm:py-4 text-lg sm:text-base text-white light:text-gray-900 hover:scale-105 hover:border-blue-400 hover:bg-blue-900/40 light:hover:border-gray-500 light:hover:bg-gray-50"
             >
               Ver Demo Interactiva en Vivo
             </a>

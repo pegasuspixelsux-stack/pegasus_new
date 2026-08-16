@@ -38,9 +38,12 @@ export const Navigation = React.memo(function Navigation() {
       <nav className="max-w-[1440px] mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-lg font-bold text-white light:text-gray-900">
+            <Link
+              href="/"
+              className="text-lg font-bold text-white light:text-gray-900"
+            >
               Pegasus <span className="text-blue-500">Pixels</span>
-            </span>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center justify-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
