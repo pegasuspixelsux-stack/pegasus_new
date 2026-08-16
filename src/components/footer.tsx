@@ -94,15 +94,6 @@ export function Footer() {
                 <span>Rockville, MD, US</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail size={16} className="shrink-0 text-blue-400" />
-                <a
-                  href="mailto:hello@pegasuspixels.com"
-                  className="hover:text-white light:hover:text-gray-900 transition-colors"
-                >
-                  hello@pegasuspixels.com
-                </a>
-              </li>
-              <li className="flex items-center gap-2.5">
                 <MessageCircle size={16} className="shrink-0 text-blue-400" />
                 <a
                   href="https://wa.me/59891028324"
@@ -110,7 +101,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white light:hover:text-gray-900 transition-colors"
                 >
-                  WhatsApp: 091 028 324
+                  091 028 324
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
@@ -129,6 +120,15 @@ export function Footer() {
                   className="hover:text-white light:hover:text-gray-900 transition-colors"
                 >
                   091 028 324
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Mail size={16} className="shrink-0 text-blue-400" />
+                <a
+                  href="mailto:hello@pegasuspixels.com"
+                  className="hover:text-white light:hover:text-gray-900 transition-colors"
+                >
+                  hello@pegasuspixels.com
                 </a>
               </li>
             </ul>
