@@ -159,7 +159,7 @@ export default function DealioPage() {
             </a>
             <a
               href="#como-funciona"
-              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 whitespace-nowrap rounded-full border border-blue-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-4 text-base text-white light:text-gray-900 hover:border-blue-400 light:hover:border-gray-500"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 whitespace-nowrap rounded-full border border-blue-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-5 sm:py-4 text-lg sm:text-base text-white light:text-gray-900 hover:border-blue-400 light:hover:border-gray-500"
             >
               Ver Demo Interactiva en Vivo
             </a>
@@ -170,7 +170,7 @@ export default function DealioPage() {
       {/* Hero image */}
       <section className="px-[20px] sm:px-6 pb-20">
         <Reveal className="relative max-w-[1200px] mx-auto">
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-sky-500/30 light:border-sky-300">
+          <div className="relative aspect-square sm:aspect-video w-full overflow-hidden rounded-2xl border border-sky-500/30 light:border-sky-300">
             <Image
               src="/images_soluciones/Dealio.png"
               alt="Showroom digitalizado con Dealio"
