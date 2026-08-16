@@ -217,8 +217,6 @@ export default function DealioPage() {
         </div>
       </section>
 
-      <OtherSolutions currentSlug="dealio" />
-
       {/* Closing CTA */}
       <section className="py-28 px-6 transition-colors">
         <Reveal className="max-w-[960px] mx-auto text-center">
@@ -238,6 +236,8 @@ export default function DealioPage() {
           </a>
         </Reveal>
       </section>
+
+      <OtherSolutions currentSlug="dealio" />
 
       <Footer />
     </main>

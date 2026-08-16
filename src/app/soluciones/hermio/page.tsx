@@ -184,8 +184,6 @@ export default function HermioPage() {
         </div>
       </section>
 
-      <OtherSolutions currentSlug="hermio" />
-
       {/* Closing CTA */}
       <section className="py-28 px-6 transition-colors">
         <Reveal className="max-w-[960px] mx-auto text-center">
@@ -205,6 +203,8 @@ export default function HermioPage() {
           </a>
         </Reveal>
       </section>
+
+      <OtherSolutions currentSlug="hermio" />
 
       <Footer />
     </main>

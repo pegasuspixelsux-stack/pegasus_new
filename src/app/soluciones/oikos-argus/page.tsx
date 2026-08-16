@@ -178,8 +178,6 @@ export default function OikosArgusPage() {
         </div>
       </section>
 
-      <OtherSolutions currentSlug="oikos-argus" />
-
       {/* Closing CTA */}
       <section className="py-28 px-6 transition-colors">
         <Reveal className="max-w-[960px] mx-auto text-center">
@@ -199,6 +197,8 @@ export default function OikosArgusPage() {
           </a>
         </Reveal>
       </section>
+
+      <OtherSolutions currentSlug="oikos-argus" />
 
       <Footer />
     </main>
