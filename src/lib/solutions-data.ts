@@ -32,14 +32,6 @@ export const SOLUTIONS: Solution[] = [
     image: "/images_soluciones/Hermio.png",
     industry: "Restaurantes",
   },
-  {
-    slug: "micromercado",
-    tag: "🛒 Pequeños Comercios",
-    name: "Micromercado",
-    desc: "Gestión integral de inventario y pedidos simplificados para tiendas de barrio y comercios minoristas.",
-    image: null,
-    industry: "Pequeños Comercios",
-  },
 ];
 
 export function getSolution(slug: string): Solution | undefined {
@@ -68,9 +60,5 @@ export const SOLUTION_ACCENTS: Record<
   hermio: {
     tagText: "text-orange-400 light:text-orange-600",
     hoverBorder: "hover:border-orange-500/60 light:hover:border-orange-400",
-  },
-  micromercado: {
-    tagText: "text-emerald-400 light:text-emerald-600",
-    hoverBorder: "hover:border-emerald-500/60 light:hover:border-emerald-400",
   },
 };

@@ -23,17 +23,22 @@ export function Solutions() {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-3 lg2:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-3 gap-6">
           {SOLUTIONS.map((item, index) => {
             const accent = SOLUTION_ACCENTS[item.slug];
             return (
               <Reveal key={item.slug} delay={index * 0.1}>
                 <Link
                   href={`/soluciones/${item.slug}`}
-                  className={`overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 rounded-2xl transition-all duration-300 flex flex-col group h-full ${accent.hoverBorder}`}
+                  // Fixed height (rather than h-full) so the image and text
+                  // halves below have real space to split 50/50 — a grid
+                  // row's auto height can't distribute flex-grow space that
+                  // doesn't exist yet, and a `fill` image has no intrinsic
+                  // height of its own to seed that computation.
+                  className={`overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 rounded-2xl transition-all duration-300 flex flex-col group h-[500px] ${accent.hoverBorder}`}
                 >
                   {item.image && (
-                    <div className="relative h-40 w-full">
+                    <div className="relative w-full flex-1">
                       <Image
                         src={item.image}
                         alt={item.name}
@@ -47,7 +52,9 @@ export function Solutions() {
                       />
                     </div>
                   )}
-                  <div className="p-8 flex-1">
+                  <div
+                    className={`p-8 flex-1 ${item.image ? "" : "flex flex-col justify-center"}`}
+                  >
                     <span
                       className={`text-xs font-semibold tracking-wider uppercase mb-3 block ${accent.tagText}`}
                     >
