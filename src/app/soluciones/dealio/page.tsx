@@ -136,7 +136,7 @@ export default function DealioPage() {
       </section>
 
       {/* Capacidades Operativas Principales */}
-      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
+      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
         <div className="max-w-[960px] mx-auto">
           <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
@@ -194,7 +194,7 @@ export default function DealioPage() {
       </section>
 
       {/* Ventajas Competitivas */}
-      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
+      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
         <div className="max-w-[960px] mx-auto">
           <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
@@ -220,22 +220,20 @@ export default function DealioPage() {
       {/* Closing CTA */}
       <section className="py-28 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
         <Reveal className="max-w-[960px] mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-10 text-white light:text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
             ¿Su concesionaria necesita dar el siguiente salto?
           </h2>
+          <p className="text-gray-300 light:text-gray-600 text-lg mb-10">
+            Deje atrás el caos de los chats sueltos y las planillas
+            desconectadas. Lleve el control absoluto de su stock y de su
+            equipo comercial.
+          </p>
           <a
             href="/#contacto"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent font-semibold transition-all duration-300 px-8 py-4 text-base bg-white text-black light:bg-gray-900 light:text-white hover:scale-105 hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900"
           >
             Solicitar Auditoría y Asesoramiento
           </a>
-
-          <div className="mt-12 border-t border-blue-800/60 light:border-gray-200 pt-8">
-            <p className="text-white light:text-gray-900 font-bold">
-              Alejandro González
-            </p>
-            <p className="text-gray-500 text-sm">Fundador de Pegasus Pixels</p>
-          </div>
         </Reveal>
       </section>
 
