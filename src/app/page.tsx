@@ -20,11 +20,11 @@ export default function Home() {
       <ImageTicker />
       <Approach />
       <Services />
+      <GrowthDiagnostic />
       <OperatorAdvantage />
       <Solutions />
       <ClientLogosTicker />
       <AboutMe />
-      <GrowthDiagnostic />
       <ContactForm />
       <Blog />
       <Footer />
