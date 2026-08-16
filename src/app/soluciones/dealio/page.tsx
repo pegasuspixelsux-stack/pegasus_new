@@ -99,13 +99,13 @@ export default function DealioPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden pt-32 pb-16 px-6">
+      <section className="relative overflow-hidden pt-32 pb-20 px-6">
         <div
           className="pointer-events-none absolute -left-32 -top-32 h-[36rem] w-[36rem] rounded-full bg-sky-300/40 blur-[110px]"
           aria-hidden="true"
         />
 
-        <Reveal className="relative max-w-[1100px] mx-auto text-center">
+        <Reveal className="relative max-w-[1440px] mx-auto text-left">
           <Link
             href="/#soluciones"
             className="text-sm text-gray-300 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors"
@@ -121,18 +121,16 @@ export default function DealioPage() {
             Infraestructura digital para concesionarias de alto rendimiento
           </h1>
 
-          <p className="text-lg text-gray-300 light:text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-300 light:text-gray-600 max-w-2xl leading-relaxed">
             No es un sitio web estático ni un software genérico. Dealio es un
             ecosistema operativo diseñado específicamente para el sector
             automotriz, conectando su inventario y su equipo comercial bajo
             una infraestructura rápida, segura y a la medida de su negocio.
           </p>
         </Reveal>
-      </section>
 
-      {/* Hero image (the only image placeholder on this page) */}
-      <section className="px-6 pb-20">
-        <Reveal className="max-w-[1100px] mx-auto">
+        {/* Hero image (the only image placeholder on this page) */}
+        <Reveal className="relative max-w-[1440px] mx-auto mt-12">
           <ImagePlaceholder caption="Mockup de alta fidelidad mostrando la interfaz de Dealio en un dispositivo móvil y de escritorio dentro de un showroom moderno" />
         </Reveal>
       </section>
