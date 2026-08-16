@@ -9,7 +9,7 @@ export function Solutions() {
       id="soluciones"
       className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors"
     >
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1260px] mx-auto">
         <Reveal className="text-center mb-16">
           <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
             Soluciones
