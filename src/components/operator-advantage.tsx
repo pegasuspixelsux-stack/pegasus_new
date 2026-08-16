@@ -16,15 +16,26 @@ export function OperatorAdvantage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Reveal>
-            <div className="bg-gray-900/40 light:bg-red-50 border border-red-500/20 light:border-red-200 p-8 rounded-2xl h-full">
-              <h3 className="text-xl font-bold text-red-400 light:text-red-600 mb-4">
-                El software tradicional
-              </h3>
-              <p className="text-gray-400 light:text-gray-600 text-sm md:text-base leading-relaxed">
-                Te venden una licencia empaquetada, te dan un manual en PDF y
-                te dejan solo frente al sistema y la frustración de tus
-                empleados que terminan volviendo al cuaderno o al Excel.
-              </p>
+            <div className="relative overflow-hidden bg-gray-900/40 light:bg-red-50 border border-red-500/20 light:border-red-200 rounded-2xl h-full">
+              <div className="relative h-72 w-full">
+                <Image
+                  src="/images_ticker/accounting-software.jfif"
+                  alt="Software tradicional empaquetado"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-red-400 light:text-red-600 mb-4">
+                  El software tradicional
+                </h3>
+                <p className="text-gray-400 light:text-gray-600 text-sm md:text-base leading-relaxed">
+                  Te venden una licencia empaquetada, te dan un manual en PDF
+                  y te dejan solo frente al sistema y la frustración de tus
+                  empleados que terminan volviendo al cuaderno o al Excel.
+                </p>
+              </div>
             </div>
           </Reveal>
 

@@ -125,12 +125,12 @@ export default function DealioPage() {
         <Reveal className="relative max-w-[1200px] mx-auto text-center">
           <Link
             href="/#soluciones"
-            className="text-sm text-gray-400 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors"
+            className="text-sm text-gray-300 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors"
           >
             ← Volver a Soluciones
           </Link>
 
-          <span className="mt-8 mb-4 block text-xs font-medium tracking-wide uppercase text-gray-500">
+          <span className="mt-8 mb-4 block text-xs font-medium tracking-wide uppercase text-gray-400 light:text-gray-600">
             Dealio · El Sistema Operativo para tu Automotora
           </span>
 
@@ -139,7 +139,7 @@ export default function DealioPage() {
             vehículos.
           </h1>
 
-          <p className="text-lg text-gray-400 light:text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg text-gray-300 light:text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
             Dealio es la plataforma integral diseñada para automotoras
             multimarca que invierten en redes sociales pero pierden
             rentabilidad por un seguimiento desorganizado. Centraliza tu
@@ -157,7 +157,7 @@ export default function DealioPage() {
             </a>
             <a
               href="#como-funciona"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-gray-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-4 text-base text-white light:text-gray-900 hover:border-gray-500 light:hover:border-gray-500"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-blue-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-4 text-base text-white light:text-gray-900 hover:border-blue-400 light:hover:border-gray-500"
             >
               Ver Demo Interactiva en Vivo
             </a>
@@ -184,17 +184,17 @@ export default function DealioPage() {
       {/* 1. El Flujo Comercial Completo */}
       <section
         id="como-funciona"
-        className="py-20 px-[20px] sm:px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 scroll-mt-24 transition-colors"
+        className="py-20 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 scroll-mt-24 transition-colors"
       >
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
-            <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
+            <span className="text-xs font-medium tracking-wide uppercase text-gray-400 light:text-gray-600">
               El Flujo Comercial Completo
             </span>
             <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
               De la Red Social al Cierre
             </h2>
-            <p className="mt-4 text-gray-400 light:text-gray-600 text-base">
+            <p className="mt-4 text-gray-300 light:text-gray-600 text-base">
               La venta moderna de vehículos no empieza en el salón; empieza
               en las plataformas de social media. Dealio conecta todo el
               proceso en tres etapas clave.
@@ -204,7 +204,7 @@ export default function DealioPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {FLOW.map(({ number, title, description }, index) => (
               <Reveal key={title} delay={index * 0.15}>
-                <div className="relative overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
+                <div className="relative overflow-hidden bg-blue-900/40 light:bg-white border border-blue-800 light:border-gray-200 p-8 rounded-2xl h-full">
                   <div
                     className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
                     aria-hidden="true"
@@ -215,7 +215,7 @@ export default function DealioPage() {
                   <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
                   </h3>
-                  <p className="relative text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                  <p className="relative text-gray-300 light:text-gray-600 text-sm leading-relaxed">
                     {description}
                   </p>
                 </div>
@@ -237,18 +237,18 @@ export default function DealioPage() {
           <div className="grid grid-cols-1 sm2:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
             {FEATURES.map(({ icon: Icon, title, description }, index) => (
               <Reveal key={title} delay={(index % 3) * 0.15}>
-                <div className="relative overflow-hidden bg-gray-900/30 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
+                <div className="relative overflow-hidden bg-blue-900/20 light:bg-gray-50 border border-blue-800 light:border-gray-200 p-8 rounded-2xl h-full">
                   <div
                     className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
                     aria-hidden="true"
                   />
-                  <div className="relative mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-700 light:border-gray-300 bg-gray-800/50 light:bg-gray-100 text-white light:text-gray-900">
+                  <div className="relative mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md border border-blue-700 light:border-gray-300 bg-blue-800/50 light:bg-gray-100 text-white light:text-gray-900">
                     <Icon size={18} strokeWidth={1.75} />
                   </div>
                   <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
                   </h3>
-                  <p className="relative text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                  <p className="relative text-gray-300 light:text-gray-600 text-sm leading-relaxed">
                     {description}
                   </p>
                 </div>
@@ -259,16 +259,16 @@ export default function DealioPage() {
       </section>
 
       {/* 3. Tablero Gerencial y Control de Rendimiento */}
-      <section className="py-20 px-[20px] sm:px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
+      <section className="py-20 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
-            <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
+            <span className="text-xs font-medium tracking-wide uppercase text-gray-400 light:text-gray-600">
               Dashboard para Managers
             </span>
             <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
               Tablero Gerencial y Control de Rendimiento
             </h2>
-            <p className="mt-4 text-gray-400 light:text-gray-600 text-base">
+            <p className="mt-4 text-gray-300 light:text-gray-600 text-base">
               El director o gerente del dealership tiene acceso a un tablero
               de control centralizado con visibilidad absoluta de toda la
               operación.
@@ -278,7 +278,7 @@ export default function DealioPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {DASHBOARD.map(({ icon: Icon, title, description }, index) => (
               <Reveal key={title} delay={index * 0.15}>
-                <div className="relative overflow-hidden bg-gray-900/80 light:bg-white border border-gray-800 light:border-gray-200 p-8 rounded-2xl h-full">
+                <div className="relative overflow-hidden bg-blue-900/40 light:bg-white border border-blue-800 light:border-gray-200 p-8 rounded-2xl h-full">
                   <div
                     className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
                     aria-hidden="true"
@@ -289,7 +289,7 @@ export default function DealioPage() {
                   <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
                     {title}
                   </h3>
-                  <p className="relative text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                  <p className="relative text-gray-300 light:text-gray-600 text-sm leading-relaxed">
                     {description}
                   </p>
                 </div>
@@ -308,7 +308,7 @@ export default function DealioPage() {
               <br />
               Implementamos soluciones en tu local.
             </h2>
-            <p className="text-gray-400 light:text-gray-600 text-lg">
+            <p className="text-gray-300 light:text-gray-600 text-lg">
               Sabemos cómo se mueve el mercado automotor en la zona esteña.
               <br />
               No te dejamos solo con un usuario y contraseña.
@@ -325,7 +325,7 @@ export default function DealioPage() {
                   <h3 className="text-lg font-bold text-white light:text-gray-900 mt-4 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-gray-400 light:text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-300 light:text-gray-600 text-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -338,15 +338,15 @@ export default function DealioPage() {
       {/* Closing CTA */}
       <section
         id="diagnostico"
-        className="py-20 px-[20px] sm:px-6 border-t border-gray-800/60 light:border-gray-200 scroll-mt-24 transition-colors"
+        className="py-20 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 scroll-mt-24 transition-colors"
       >
-        <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
+        <Reveal className="max-w-3xl mx-auto bg-blue-900/50 light:bg-gray-50 border border-blue-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[0.95] mb-3 text-white light:text-gray-900">
               ¿Listo para profesionalizar la gestión comercial de tu
               automotora?
             </h2>
-            <p className="text-gray-400 light:text-gray-600 text-sm md:text-base">
+            <p className="text-gray-300 light:text-gray-600 text-sm md:text-base">
               Dejá atrás el caos de los chats sueltos y las planillas
               desconectadas. Lleva el control absoluto de tu stock y de tus
               vendedores.

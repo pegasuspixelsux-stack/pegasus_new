@@ -3,10 +3,10 @@
 import { useState, type FormEvent } from "react";
 
 const inputClasses =
-  "w-full bg-black light:bg-white border border-gray-800 light:border-gray-300 rounded-xl px-4 py-3 text-white light:text-gray-900 text-sm focus:outline-none focus:border-gray-500 light:focus:border-gray-500";
+  "w-full bg-black light:bg-white border border-blue-800 light:border-gray-300 rounded-xl px-4 py-3 text-white light:text-gray-900 text-sm focus:outline-none focus:border-blue-400 light:focus:border-gray-500";
 
 const labelClasses =
-  "block text-xs font-semibold uppercase tracking-wider text-gray-400 light:text-gray-600 mb-2";
+  "block text-xs font-semibold uppercase tracking-wider text-gray-300 light:text-gray-600 mb-2";
 
 export function DealioLeadForm() {
   const [formData, setFormData] = useState({
