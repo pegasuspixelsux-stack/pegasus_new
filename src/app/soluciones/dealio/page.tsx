@@ -134,9 +134,11 @@ export default function DealioPage() {
             Dealio · El Sistema Operativo para tu Automotora
           </span>
 
-          <h1 className="text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.05] mb-6 bg-gradient-to-b from-blue-500 via-blue-300 to-white bg-clip-text text-transparent light:from-blue-700 light:via-blue-500 light:to-gray-900">
+          <h1 className="text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.05] mb-6 text-white light:text-gray-900 sm:bg-gradient-to-b sm:from-blue-500 sm:via-blue-300 sm:to-white sm:bg-clip-text sm:text-transparent sm:light:from-blue-700 sm:light:via-blue-500 sm:light:to-gray-900">
             Digitaliza tu stock, centraliza leads y acelera la venta de tus
-            vehículos.
+            vehículos
+            <br />
+            con <span className="text-white light:text-gray-900">Dealio</span>.
           </h1>
 
           <p className="text-lg text-gray-300 light:text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -151,13 +153,13 @@ export default function DealioPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#diagnostico"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent font-semibold transition-all duration-300 px-8 py-4 text-base bg-white text-black light:bg-gray-900 light:text-white hover:scale-105 hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent font-semibold transition-all duration-300 px-8 py-5 sm:py-4 text-lg sm:text-base bg-white text-black light:bg-gray-900 light:text-white hover:scale-105 hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900"
             >
               Agenda tu Consulta
             </a>
             <a
               href="#como-funciona"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-blue-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-4 text-base text-white light:text-gray-900 hover:border-blue-400 light:hover:border-gray-500"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 whitespace-nowrap rounded-full border border-blue-700 light:border-gray-300 font-semibold transition-all duration-300 px-8 py-4 text-base text-white light:text-gray-900 hover:border-blue-400 light:hover:border-gray-500"
             >
               Ver Demo Interactiva en Vivo
             </a>
@@ -340,9 +342,9 @@ export default function DealioPage() {
         id="diagnostico"
         className="py-20 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 scroll-mt-24 transition-colors"
       >
-        <Reveal className="max-w-3xl mx-auto bg-blue-900/50 light:bg-gray-50 border border-blue-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
+        <Reveal className="max-w-3xl mx-auto bg-blue-900/50 light:bg-gray-50 border border-blue-800 light:border-gray-200 p-5 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[0.95] mb-3 text-white light:text-gray-900">
+            <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[1.3] sm:leading-[0.95] mb-3 text-white light:text-gray-900">
               ¿Listo para profesionalizar la gestión comercial de tu
               automotora?
             </h2>

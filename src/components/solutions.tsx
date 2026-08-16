@@ -7,7 +7,7 @@ export function Solutions() {
   return (
     <section
       id="soluciones"
-      className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors"
+      className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors"
     >
       <div className="max-w-[1440px] mx-auto">
         <Reveal className="text-center mb-16">
