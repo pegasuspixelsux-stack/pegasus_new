@@ -6,7 +6,7 @@ export function Approach() {
       id="enfoque"
       className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[960px] mx-auto">
         <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div>
             <span className="text-xs font-medium tracking-wide uppercase text-gray-500">

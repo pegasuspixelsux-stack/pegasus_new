@@ -82,9 +82,9 @@ export function Services() {
           {SERVICES.map(({ icon: Icon, title, description }, index) => {
             const isFirst = index === 0;
             return (
-              <Reveal key={title} delay={(index % 3) * 0.1}>
+              <Reveal key={title} delay={(index % 3) * 0.1} className="h-full">
                 <div
-                  className={`group relative overflow-hidden rounded-2xl border p-6 transition-all duration-300 hover:border-white hover:bg-white light:hover:border-gray-900 light:hover:bg-gray-900 ${
+                  className={`group relative h-full overflow-hidden rounded-2xl border p-6 transition-all duration-300 hover:border-white hover:bg-white light:hover:border-gray-900 light:hover:bg-gray-900 ${
                     isFirst
                       ? "border-white bg-white light:border-gray-900 light:bg-gray-900"
                       : "border-gray-800 bg-gray-900/30 light:border-gray-200 light:bg-gray-50"

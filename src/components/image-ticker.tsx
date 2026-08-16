@@ -18,7 +18,7 @@ export function ImageTicker() {
       className="relative overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
       aria-hidden="true"
     >
-      <div className="flex w-max animate-[marquee_32s_linear_infinite] gap-6 hover:[animation-play-state:paused]">
+      <div className="flex w-max animate-[marquee_32s_linear_infinite] gap-6 [backface-visibility:hidden] [transform:translateZ(0)] will-change-transform hover:[animation-play-state:paused]">
         {TICKER_ITEMS.map((image, index) => (
           <div
             key={`${image.src}-${index}`}
