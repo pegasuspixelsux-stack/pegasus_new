@@ -66,7 +66,7 @@ export function Services() {
       id="servicios"
       className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
-      <div className="max-w-[1260px] mx-auto">
+      <div className="max-w-[960px] mx-auto">
         <Reveal className="max-w-2xl mx-auto text-center mb-16">
           <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
             Servicios

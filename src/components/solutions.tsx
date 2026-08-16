@@ -15,7 +15,7 @@ export function Solutions() {
             Soluciones
           </span>
           <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
-            Soluciones Listas para Operar
+            Plataformas Diseñadas para Rendir desde el Día Uno
           </h2>
           <p className="text-gray-400 light:text-gray-600 text-lg">
             Infraestructura tecnológica especializada adaptada a las reglas
