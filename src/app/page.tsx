@@ -1,7 +1,6 @@
 import { Navigation } from "@/components/navigation";
 import { Hero } from "@/components/hero";
 import { Approach } from "@/components/approach";
-import { ImageTicker } from "@/components/image-ticker";
 import { Solutions } from "@/components/solutions";
 import { Services } from "@/components/services";
 import { OperatorAdvantage } from "@/components/operator-advantage";
@@ -15,11 +14,10 @@ export default function Home() {
     <main className="flex flex-col flex-1 min-h-screen bg-black light:bg-white text-white light:text-gray-900 transition-colors">
       <Navigation />
       <Hero />
-      <ImageTicker />
       <Approach />
       <Services />
-      <Solutions />
       <OperatorAdvantage />
+      <Solutions />
       <ClientLogosTicker />
       <AboutMe />
       <ContactForm />
