@@ -72,9 +72,7 @@ export function Services() {
             Servicios
           </span>
           <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
-            Todo lo que tu negocio necesita
-            <br />
-            en un solo lugar
+            El ecosistema tecnológico que su empresa necesita hoy
           </h2>
         </Reveal>
 

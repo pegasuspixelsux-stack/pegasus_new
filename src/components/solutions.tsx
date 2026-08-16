@@ -38,7 +38,11 @@ export function Solutions() {
                         src={item.image}
                         alt={item.name}
                         fill
-                        sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                        // Sized ~20% above the actual display width so the
+                        // hover scale-105 has real resolution to zoom into
+                        // instead of upscaling an exact-fit bitmap (blurry).
+                        sizes="(min-width: 1024px) 30vw, (min-width: 768px) 60vw, 100vw"
+                        quality={90}
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
