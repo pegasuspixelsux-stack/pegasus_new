@@ -13,7 +13,7 @@ export function Hero() {
         <span className="mb-4 block text-xs font-medium tracking-wide uppercase text-white light:text-gray-900">
           Pegasus Pixels · Socio Tecnológico
         </span>
-        <h1 className="max-w-[960px] mx-auto text-5xl sm2:text-6xl md:text-7xl font-normal tracking-[-0.04em] leading-[0.95] mb-6 bg-gradient-to-b from-white via-blue-300 to-blue-500 bg-clip-text text-transparent light:bg-none light:text-gray-900">
+        <h1 className="max-w-[960px] mx-auto text-5xl sm2:text-6xl md:text-7xl font-normal tracking-[-0.04em] leading-[0.95] mb-6 text-white light:text-gray-900">
           Diseño y desarrollo de tu infraestructura digital
         </h1>
         <p className="text-lg md:text-xl text-gray-400 light:text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
