@@ -14,7 +14,7 @@ export function Solutions() {
           <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
             Soluciones
           </span>
-          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
+          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
             Soluciones Listas para Operar
           </h2>
           <p className="text-gray-400 light:text-gray-600 text-lg">

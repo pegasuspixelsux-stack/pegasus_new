@@ -201,7 +201,7 @@ export default function OikosArgusPage() {
       <section className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               El costo oculto de operar con software genérico o planillas
             </h2>
           </Reveal>
@@ -230,7 +230,7 @@ export default function OikosArgusPage() {
       <section id="como-funciona" className="py-28 px-6 scroll-mt-24">
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               Una arquitectura robusta, multi-sucursal y blindada
             </h2>
           </Reveal>
@@ -262,7 +262,7 @@ export default function OikosArgusPage() {
             <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
               Resultados
             </span>
-            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               Así cambia la eficiencia de tu inmobiliaria
             </h2>
           </Reveal>
@@ -291,7 +291,7 @@ export default function OikosArgusPage() {
       <section className="py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
               Desarrollo a medida con soporte presencial en Maldonado
             </h2>
             <p className="text-gray-400 light:text-gray-600 text-lg">
@@ -329,7 +329,7 @@ export default function OikosArgusPage() {
       >
         <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[0.95] mb-3 text-white light:text-gray-900">
+            <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[1.15] mb-3 text-white light:text-gray-900">
               ¿Listo para profesionalizar la operación de tu inmobiliaria?
             </h2>
             <p className="text-gray-400 light:text-gray-600 text-sm md:text-base">

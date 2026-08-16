@@ -12,7 +12,7 @@ export function OperatorAdvantage() {
           <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
             Infraestructura
           </span>
-          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
             ¿Qué significa tener un Socio Tecnológico?
           </h2>
         </Reveal>

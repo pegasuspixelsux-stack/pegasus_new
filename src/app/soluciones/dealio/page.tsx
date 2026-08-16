@@ -193,7 +193,7 @@ export default function DealioPage() {
             <span className="text-xs font-medium tracking-wide uppercase text-gray-400 light:text-gray-600">
               El Flujo Comercial Completo
             </span>
-            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               De la Red Social al Cierre
             </h2>
             <p className="mt-4 text-gray-300 light:text-gray-600 text-base">
@@ -231,7 +231,7 @@ export default function DealioPage() {
       <section className="py-28 px-[20px] sm:px-6">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               Características Clave del Sistema
             </h2>
           </Reveal>
@@ -267,7 +267,7 @@ export default function DealioPage() {
             <span className="text-xs font-medium tracking-wide uppercase text-gray-400 light:text-gray-600">
               Dashboard para Managers
             </span>
-            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
               Tablero Gerencial y Control de Rendimiento
             </h2>
             <p className="mt-4 text-gray-300 light:text-gray-600 text-base">
@@ -305,7 +305,7 @@ export default function DealioPage() {
       <section className="py-28 px-[20px] sm:px-6">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-[960px] mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
               No vendemos software genérico.
               <br />
               Implementamos soluciones en tu local.
@@ -344,7 +344,7 @@ export default function DealioPage() {
       >
         <Reveal className="max-w-3xl mx-auto bg-blue-900/50 light:bg-gray-50 border border-blue-800 light:border-gray-200 p-5 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[1.3] sm:leading-[0.95] mb-3 text-white light:text-gray-900">
+            <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[1.3] sm:leading-[1.15] mb-3 text-white light:text-gray-900">
               ¿Listo para profesionalizar la gestión comercial de tu
               automotora?
             </h2>
