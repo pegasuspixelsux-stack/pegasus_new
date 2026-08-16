@@ -8,6 +8,7 @@ import { OperatorAdvantage } from "@/components/operator-advantage";
 import { ClientLogosTicker } from "@/components/client-logos-ticker";
 import { AboutMe } from "@/components/about-me";
 import { ContactForm } from "@/components/contact-form";
+import { Blog } from "@/components/blog";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <ClientLogosTicker />
       <AboutMe />
       <ContactForm />
+      <Blog />
       <Footer />
     </main>
   );
