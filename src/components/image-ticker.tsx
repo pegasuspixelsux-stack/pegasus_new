@@ -21,7 +21,7 @@ export function ImageTicker() {
         {TICKER_ITEMS.map((image, index) => (
           <div
             key={`${image.src}-${index}`}
-            className="relative h-56 w-56 shrink-0 overflow-hidden rounded-2xl border border-gray-800 light:border-gray-200 sm:h-64 sm:w-64"
+            className="relative aspect-square w-[75vw] shrink-0 overflow-hidden rounded-2xl border border-gray-800 light:border-gray-200 sm:w-64"
           >
             <Image
               src={image.src}
@@ -34,7 +34,7 @@ export function ImageTicker() {
               loading={index < IMAGES.length ? undefined : "eager"}
               // Request more than the display size so the browser isn't
               // forced to upscale during the continuous marquee transform.
-              sizes="(min-width: 640px) 384px, 320px"
+              sizes="(min-width: 640px) 384px, 75vw"
               quality={90}
               className="object-cover"
             />
