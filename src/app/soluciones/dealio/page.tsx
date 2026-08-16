@@ -6,75 +6,79 @@ import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
-  title: "Dealio — Infraestructura para el Negocio Automotriz | Pegasus Pixels",
+  title: "Dealio — Infraestructura para Concesionarias de Alto Rendimiento | Pegasus Pixels",
   description:
-    "Inventario en tiempo real, captura total de leads, precalificación de trade-in y herramientas móviles para el equipo de ventas. Dealio es la infraestructura de Pegasus Pixels para concesionarias.",
+    "Ecosistema operativo diseñado para el sector automotriz: control de inventario en tiempo real, captura total de leads y herramientas móviles para el equipo de ventas.",
 };
 
-const FEATURES = [
+const CAPABILITIES = [
   {
     title: "Publicación y Control de Inventario",
-    imageCaption: "Panel de gestión de stock y detalle de vehículos",
+    description:
+      "Gestión centralizada de stock en tiempo real, respaldada por una arquitectura basada en roles (Owner, Manager, Sales Person).",
+  },
+  {
+    title: "Captura Total de Leads",
+    description:
+      "Canalización automatizada de consultas y prospectos para asegurar un seguimiento impecable, evitando que se pierda ninguna oportunidad comercial.",
+  },
+  {
+    title: "Herramientas Móviles de Bolsillo",
+    description:
+      "Interfaz optimizada (Mobile-First) para que el equipo de ventas consulte especificaciones y gestione negociaciones directamente desde el celular o tablet mientras caminan el salón.",
+  },
+];
+
+const WALKTHROUGH = [
+  {
+    number: "1",
+    title: "Gestión de Stock en Tiempo Real",
     points: [
       {
         title: "Control Operativo Total",
         description:
-          "Arquitectura basada en roles (Owner, Manager, Sales Person) para gestionar el inventario en tiempo real.",
+          "Permite al gerente supervisar las unidades disponibles, el estado de preparación de cada vehículo y los costos asociados con absoluta precisión.",
       },
       {
-        title: "Ficha Técnica Detallada",
+        title: "Ficha Técnica Dinámica",
         description:
-          "Catálogo digital de alto rendimiento con especificaciones claras y galerías fotográficas profesionales para el cliente final.",
+          "Ofrece al cliente catálogos de alto rendimiento con especificaciones técnicas claras y galerías fotográficas profesionales.",
       },
     ],
   },
   {
-    title: "Captura Total de Leads",
-    imageCaption: "Vista de bandeja de entrada y asignación de prospectos",
+    number: "2",
+    title: "Seguimiento Comercial Inteligente",
     points: [
       {
         title: "Cero Oportunidades Perdidas",
         description:
-          "Canalización automática de consultas para asegurar un seguimiento impecable de cada cliente.",
+          "El sistema centraliza y asigna automáticamente cada consulta entrante al vendedor correspondiente.",
       },
       {
-        title: "Supervisión en Tiempo Real",
+        title: "Trazabilidad Operativa",
         description:
-          "Asignación inteligente de prospectos para que el equipo comercial responda al instante.",
+          "Monitoreo en tiempo real del estado de cada negociación para eliminar la fricción administrativa y acelerar los cierres.",
       },
     ],
   },
+];
+
+const ADVANTAGES = [
   {
-    title: "Precalificación y Tasación Remota (Trade-In)",
-    imageCaption: "Formulario de carga de documentación y fotos para tasación",
-    points: [
-      {
-        title: "Precalificación Documental",
-        description:
-          "Canal seguro para que el cliente cargue la documentación inicial y agilice la evaluación crediticia.",
-      },
-      {
-        title: "Tasación de Vehículos",
-        description:
-          "Sección dedicada para recibir fotografías y detalles del vehículo actual del cliente antes de coordinar la visita al salón.",
-      },
-    ],
+    title: "Eficiencia Extrema",
+    description:
+      "Automatización de procesos administrativos repetitivos para que la operación se mueva con agilidad.",
   },
   {
-    title: "Herramientas de Bolsillo para el Vendedor",
-    imageCaption: "Interfaz móvil optimizada para uso en el salón de ventas",
-    points: [
-      {
-        title: "Mobile-First",
-        description:
-          "Interfaz ligera y rápida para que los vendedores consulten stock y presenten opciones desde el celular o tablet mientras caminan el salón.",
-      },
-      {
-        title: "Ahorro de Tiempo",
-        description:
-          "Registro de interacciones en segundos para enfocar la energía en el cierre de la venta.",
-      },
-    ],
+    title: "Ahorro de Tiempo Crítico",
+    description:
+      "Reducción drástica en los tiempos de respuesta y en la burocracia de cada trámite comercial.",
+  },
+  {
+    title: "Profesionalismo Tecnológico",
+    description:
+      "Proyecta una imagen corporativa superior que respalda la confianza del comprador desde el primer contacto digital.",
   },
 ];
 
@@ -114,66 +118,118 @@ export default function DealioPage() {
           </span>
 
           <h1 className="text-4xl sm2:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.15] mb-6 text-white light:text-gray-900">
-            Diseñado para el Negocio Automotriz
+            Infraestructura digital para concesionarias de alto rendimiento
           </h1>
 
           <p className="text-lg text-gray-300 light:text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Una infraestructura de alta velocidad desarrollada para
-            concesionarias que exigen control total, eficiencia operativa y
-            cero fricción comercial.
+            No es un sitio web estático ni un software genérico. Dealio es un
+            ecosistema operativo diseñado específicamente para el sector
+            automotriz, conectando su inventario y su equipo comercial bajo
+            una infraestructura rápida, segura y a la medida de su negocio.
           </p>
         </Reveal>
       </section>
 
-      {/* Hero image */}
+      {/* Hero image (the only image placeholder on this page) */}
       <section className="px-6 pb-20">
         <Reveal className="max-w-[1100px] mx-auto">
-          <ImagePlaceholder caption="Mockup principal de la plataforma Dealio en dispositivos móviles y de escritorio" />
+          <ImagePlaceholder caption="Mockup de alta fidelidad mostrando la interfaz de Dealio en un dispositivo móvil y de escritorio dentro de un showroom moderno" />
         </Reveal>
       </section>
 
-      {/* Feature sections */}
-      {FEATURES.map((feature, index) => {
-        const imageOnRight = index % 2 === 1;
-        return (
-          <section
-            key={feature.title}
-            className={`py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors ${
-              index % 2 === 0 ? "bg-blue-900/20 light:bg-gray-50" : ""
-            }`}
-          >
-            <div className="max-w-[1100px] mx-auto">
-              <Reveal className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
-                  {feature.title}
-                </h2>
-              </Reveal>
+      {/* Capacidades Operativas Principales */}
+      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
+        <div className="max-w-[1100px] mx-auto">
+          <Reveal className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
+              Capacidades Operativas Principales
+            </h2>
+          </Reveal>
 
-              <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-                <div className={imageOnRight ? "md:order-2" : ""}>
-                  <ImagePlaceholder caption={feature.imageCaption} />
-                </div>
-
-                <div>
-                  <ul className="space-y-6">
-                    {feature.points.map((point) => (
-                      <li
-                        key={point.title}
-                        className="text-gray-300 light:text-gray-600 leading-relaxed"
-                      >
-                        <strong className="text-white light:text-gray-900 font-bold">
-                          {point.title}:
-                        </strong>{" "}
-                        {point.description}
-                      </li>
-                    ))}
-                  </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {CAPABILITIES.map(({ title, description }, index) => (
+              <Reveal key={title} delay={index * 0.1} className="h-full">
+                <div className="relative h-full overflow-hidden bg-blue-900/40 light:bg-white border border-blue-800 light:border-gray-200 p-8 rounded-2xl">
+                  <div
+                    className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
+                    aria-hidden="true"
+                  />
+                  <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
+                    {title}
+                  </h3>
+                  <p className="relative text-gray-300 light:text-gray-600 text-sm leading-relaxed">
+                    {description}
+                  </p>
                 </div>
               </Reveal>
-            </div>
-          </section>
-        );
-      })}
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Recorrido Funcional y de Pantallas */}
+      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
+        <div className="max-w-[1100px] mx-auto">
+          <Reveal className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
+              Recorrido Funcional y de Pantallas
+            </h2>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            {WALKTHROUGH.map((section, index) => (
+              <Reveal key={section.title} delay={index * 0.15}>
+                <h3 className="text-xl font-normal text-white light:text-gray-900 mb-6">
+                  {section.number}. {section.title}
+                </h3>
+                <ul className="space-y-6">
+                  {section.points.map((point) => (
+                    <li
+                      key={point.title}
+                      className="text-gray-300 light:text-gray-600 leading-relaxed"
+                    >
+                      <strong className="text-white light:text-gray-900 font-bold">
+                        {point.title}:
+                      </strong>{" "}
+                      {point.description}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ventajas Competitivas */}
+      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
+        <div className="max-w-[1100px] mx-auto">
+          <Reveal className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
+              Ventajas Competitivas
+            </h2>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {ADVANTAGES.map(({ title, description }, index) => (
+              <Reveal key={title} delay={index * 0.1} className="h-full">
+                <div className="relative h-full overflow-hidden bg-blue-900/40 light:bg-white border border-blue-800 light:border-gray-200 p-8 rounded-2xl">
+                  <div
+                    className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-sky-400/20 blur-3xl"
+                    aria-hidden="true"
+                  />
+                  <h3 className="relative text-lg font-bold text-white light:text-gray-900 mb-3">
+                    {title}
+                  </h3>
+                  <p className="relative text-gray-300 light:text-gray-600 text-sm leading-relaxed">
+                    {description}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Closing CTA */}
       <section className="py-28 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
@@ -187,6 +243,13 @@ export default function DealioPage() {
           >
             Solicitar Auditoría y Asesoramiento
           </a>
+
+          <div className="mt-12 border-t border-blue-800/60 light:border-gray-200 pt-8">
+            <p className="text-white light:text-gray-900 font-bold">
+              Alejandro González
+            </p>
+            <p className="text-gray-500 text-sm">Fundador de Pegasus Pixels</p>
+          </div>
         </Reveal>
       </section>
 
