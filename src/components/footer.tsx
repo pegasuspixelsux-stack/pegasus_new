@@ -36,8 +36,8 @@ export function Footer() {
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-[1.2fr_1fr_1fr_1.2fr_0.8fr] gap-10 mb-12">
           <div className="col-span-2 md:col-span-1">
-            <span className="font-bold text-white light:text-gray-900 text-base">
-              Pegasus Pixels
+            <span className="font-bold text-white light:text-gray-900 text-lg">
+              Pegasus <span className="text-blue-500">Pixels</span>
             </span>
             <p className="text-gray-500 text-xs mt-2 leading-relaxed">
               Diseñamos sistemas de gestión y automatización de negocios.
