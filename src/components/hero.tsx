@@ -17,9 +17,8 @@ export function Hero() {
           Diseño y desarrollo de tu infraestructura digital
         </h1>
         <p className="text-lg md:text-xl text-gray-400 light:text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-          Implementamos sistemas validados para Concesionarias, Inmobiliarias y
-          Restaurantes, entrenamos a tu equipo en tu local y mantenemos tu
-          infraestructura activa a largo plazo.
+          Implementamos sistemas validados tu negocio, entrenamos a tu equipo
+          en tu local y mantenemos tu infraestructura activa a largo plazo.
         </p>
         <div>
           <a

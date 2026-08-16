@@ -7,14 +7,17 @@ export function Approach() {
       className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
       <div className="max-w-[1440px] mx-auto">
-        <Reveal className="max-w-[960px] mx-auto text-center">
-          <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
-            Enfoque
-          </span>
-          <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-10 text-white light:text-gray-900">
-            Arquitectura tecnológica para negocios en pleno crecimiento
-          </h2>
-          <div className="text-left space-y-6">
+        <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
+          <div>
+            <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
+              Enfoque
+            </span>
+            <h2 className="mt-4 text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
+              Arquitectura tecnológica para negocios en pleno crecimiento
+            </h2>
+          </div>
+
+          <div className="space-y-6">
             <p className="text-gray-300 light:text-gray-700 leading-relaxed">
               <strong className="text-white light:text-gray-900 font-bold">
                 El Enfoque:

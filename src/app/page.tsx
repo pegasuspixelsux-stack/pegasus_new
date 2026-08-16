@@ -15,9 +15,9 @@ export default function Home() {
     <main className="flex flex-col flex-1 min-h-screen bg-black light:bg-white text-white light:text-gray-900 transition-colors">
       <Navigation />
       <Hero />
+      <ImageTicker />
       <Approach />
       <Services />
-      <ImageTicker />
       <Solutions />
       <OperatorAdvantage />
       <ClientLogosTicker />
