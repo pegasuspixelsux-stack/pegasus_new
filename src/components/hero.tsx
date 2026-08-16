@@ -22,10 +22,10 @@ export function Hero() {
         </p>
         <div>
           <a
-            href="#soluciones"
+            href="#contacto"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent font-semibold transition-all duration-300 px-8 py-4 text-base bg-white text-black light:bg-gray-900 light:text-white hover:scale-105 hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900"
           >
-            Elegir mi Industria y Empezar
+            Solicite una Consulta
           </a>
         </div>
 
