@@ -5,7 +5,7 @@ export function OperatorAdvantage() {
   return (
     <section
       id="infraestructura"
-      className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
+      className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
       <div className="max-w-[960px] mx-auto">
         <Reveal>

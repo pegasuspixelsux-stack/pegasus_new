@@ -186,7 +186,7 @@ export default function DealioPage() {
       {/* 1. El Flujo Comercial Completo */}
       <section
         id="como-funciona"
-        className="py-20 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 scroll-mt-24 transition-colors"
+        className="py-28 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 scroll-mt-24 transition-colors"
       >
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
@@ -228,7 +228,7 @@ export default function DealioPage() {
       </section>
 
       {/* 2. Características Clave del Sistema */}
-      <section className="py-20 px-[20px] sm:px-6">
+      <section className="py-28 px-[20px] sm:px-6">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
@@ -261,7 +261,7 @@ export default function DealioPage() {
       </section>
 
       {/* 3. Tablero Gerencial y Control de Rendimiento */}
-      <section className="py-20 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
+      <section className="py-28 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 bg-blue-900/20 light:bg-gray-50 transition-colors">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-xs font-medium tracking-wide uppercase text-gray-400 light:text-gray-600">
@@ -302,7 +302,7 @@ export default function DealioPage() {
       </section>
 
       {/* Local approach */}
-      <section className="py-20 px-[20px] sm:px-6">
+      <section className="py-28 px-[20px] sm:px-6">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="max-w-[960px] mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
@@ -340,7 +340,7 @@ export default function DealioPage() {
       {/* Closing CTA */}
       <section
         id="diagnostico"
-        className="py-20 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 scroll-mt-24 transition-colors"
+        className="py-28 px-[20px] sm:px-6 border-t border-blue-800/60 light:border-gray-200 scroll-mt-24 transition-colors"
       >
         <Reveal className="max-w-3xl mx-auto bg-blue-900/50 light:bg-gray-50 border border-blue-800 light:border-gray-200 p-5 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
           <div className="text-center mb-10">

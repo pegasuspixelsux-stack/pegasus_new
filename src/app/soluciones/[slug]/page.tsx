@@ -94,7 +94,7 @@ export default async function SolutionPage(
         </div>
       </section>
 
-      <section className="py-16 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors">
+      <section className="py-24 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors">
         <div className="max-w-[1440px] mx-auto">
           <h2 className="text-xl font-medium text-white light:text-gray-900 mb-8">
             Otras soluciones

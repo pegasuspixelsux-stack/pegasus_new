@@ -198,7 +198,7 @@ export default function OikosArgusPage() {
       </section>
 
       {/* Pain points */}
-      <section className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
+      <section className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
@@ -227,7 +227,7 @@ export default function OikosArgusPage() {
       </section>
 
       {/* Solution */}
-      <section id="como-funciona" className="py-20 px-6 scroll-mt-24">
+      <section id="como-funciona" className="py-28 px-6 scroll-mt-24">
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] text-white light:text-gray-900">
@@ -256,7 +256,7 @@ export default function OikosArgusPage() {
       </section>
 
       {/* Results & efficiency */}
-      <section className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
+      <section className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 bg-gray-900/30 light:bg-gray-50 transition-colors">
         <div className="max-w-[1440px] mx-auto">
           <Reveal className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-xs font-medium tracking-wide uppercase text-gray-500">
@@ -288,7 +288,7 @@ export default function OikosArgusPage() {
       </section>
 
       {/* Local approach */}
-      <section className="py-20 px-6">
+      <section className="py-28 px-6">
         <div className="max-w-[1200px] mx-auto">
           <Reveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[0.95] mb-4 text-white light:text-gray-900">
@@ -325,7 +325,7 @@ export default function OikosArgusPage() {
       {/* Closing CTA */}
       <section
         id="diagnostico"
-        className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 scroll-mt-24 transition-colors"
+        className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 scroll-mt-24 transition-colors"
       >
         <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
           <div className="text-center mb-10">

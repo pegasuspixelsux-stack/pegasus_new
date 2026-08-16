@@ -64,7 +64,7 @@ export function Services() {
   return (
     <section
       id="servicios"
-      className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
+      className="py-28 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
       <div className="max-w-[1440px] mx-auto">
         <Reveal className="max-w-2xl mx-auto text-center mb-16">
