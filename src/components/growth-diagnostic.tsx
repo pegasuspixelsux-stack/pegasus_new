@@ -46,7 +46,7 @@ export function GrowthDiagnostic() {
           </div>
 
           <div>
-            <ul className="space-y-6 mb-8">
+            <ul className="space-y-6">
               {POINTS.map((point) => (
                 <li
                   key={point.title}
@@ -59,16 +59,16 @@ export function GrowthDiagnostic() {
                 </li>
               ))}
             </ul>
-
-            <div className="text-center">
-              <a
-                href="#contacto"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent font-semibold transition-all duration-300 px-8 py-4 text-base bg-white text-black light:bg-gray-900 light:text-white hover:scale-105 hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900"
-              >
-                Solicitar Auditoría y Asesoramiento
-              </a>
-            </div>
           </div>
+        </Reveal>
+
+        <Reveal delay={0.2} className="text-center mt-12">
+          <a
+            href="#contacto"
+            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-transparent font-semibold transition-all duration-300 px-8 py-4 text-base bg-white text-black light:bg-gray-900 light:text-white hover:scale-105 hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900"
+          >
+            Solicitar Auditoría y Asesoramiento
+          </a>
         </Reveal>
       </div>
     </section>
