@@ -67,7 +67,7 @@ export function DealioLeadForm() {
         type="submit"
         className="w-full border border-transparent bg-white text-black light:bg-gray-900 light:text-white hover:scale-[1.02] hover:bg-black hover:text-white hover:border-white light:hover:bg-white light:hover:text-gray-900 light:hover:border-gray-900 font-bold py-4 rounded-full text-base transition-all duration-300"
       >
-        Coordinar Diagnóstico de Inventario
+        Agenda tu Consulta
       </button>
     </form>
   );

@@ -37,7 +37,7 @@ export function ContactForm() {
       id="contacto"
       className="py-20 px-6 border-t border-gray-800/60 light:border-gray-200 transition-colors"
     >
-      <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-8 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
+      <Reveal className="max-w-3xl mx-auto bg-gray-900/90 light:bg-gray-50 border border-gray-800 light:border-gray-200 p-5 md:p-12 rounded-3xl shadow-2xl light:shadow-gray-300/40">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-normal tracking-[-0.04em] leading-[0.95] mb-3 text-white light:text-gray-900">
             Analicemos tu presencia digital.
