@@ -120,7 +120,7 @@ export default function DealioPage() {
 
         {/* Hero image */}
         <Reveal className="relative max-w-[960px] mx-auto mt-12">
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-blue-800/60 light:border-gray-200">
+          <div className="relative aspect-square sm:aspect-video w-full overflow-hidden rounded-2xl border border-blue-800/60 light:border-gray-200">
             <Image
               src="/images_dealio/consesionaria_3.png"
               alt="Showroom de concesionaria equipado con Dealio"
