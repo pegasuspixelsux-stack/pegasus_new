@@ -136,7 +136,7 @@ export default function DealioPage() {
       </section>
 
       {/* Capacidades Operativas Principales */}
-      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
+      <section className="py-24 px-6 transition-colors">
         <div className="max-w-[960px] mx-auto">
           <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
@@ -160,7 +160,7 @@ export default function DealioPage() {
       </section>
 
       {/* Recorrido Funcional y de Pantallas */}
-      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
+      <section className="py-24 px-6 transition-colors">
         <div className="max-w-[960px] mx-auto">
           <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
@@ -194,7 +194,7 @@ export default function DealioPage() {
       </section>
 
       {/* Ventajas Competitivas */}
-      <section className="py-24 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
+      <section className="py-24 px-6 transition-colors">
         <div className="max-w-[960px] mx-auto">
           <Reveal className="text-left mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] text-white light:text-gray-900">
@@ -218,7 +218,7 @@ export default function DealioPage() {
       </section>
 
       {/* Closing CTA */}
-      <section className="py-28 px-6 border-t border-blue-800/60 light:border-gray-200 transition-colors">
+      <section className="py-28 px-6 transition-colors">
         <Reveal className="max-w-[960px] mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-normal tracking-[-0.04em] leading-[1.15] mb-4 text-white light:text-gray-900">
             ¿Su concesionaria necesita dar el siguiente salto?
