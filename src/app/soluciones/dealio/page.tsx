@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { Image as ImageIcon } from "lucide-react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
@@ -82,17 +82,6 @@ const ADVANTAGES = [
   },
 ];
 
-function ImagePlaceholder({ caption }: { caption: string }) {
-  return (
-    <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl border border-dashed border-sky-500/30 light:border-sky-300 bg-blue-900/20 light:bg-gray-50 p-6 text-center">
-      <div className="flex flex-col items-center gap-3 text-gray-400 light:text-gray-500">
-        <ImageIcon size={28} strokeWidth={1.5} />
-        <span className="text-xs uppercase tracking-wide">{caption}</span>
-      </div>
-    </div>
-  );
-}
-
 export default function DealioPage() {
   return (
     <main className="flex flex-col flex-1 min-h-screen bg-[#040a1a] light:bg-white text-white light:text-gray-900 transition-colors">
@@ -129,9 +118,19 @@ export default function DealioPage() {
           </p>
         </Reveal>
 
-        {/* Hero image (the only image placeholder on this page) */}
+        {/* Hero image */}
         <Reveal className="relative max-w-[960px] mx-auto mt-12">
-          <ImagePlaceholder caption="Mockup de alta fidelidad mostrando la interfaz de Dealio en un dispositivo móvil y de escritorio dentro de un showroom moderno" />
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-blue-800/60 light:border-gray-200">
+            <Image
+              src="/images_dealio/consesionaria_3.png"
+              alt="Showroom de concesionaria equipado con Dealio"
+              fill
+              sizes="(min-width: 960px) 960px, 100vw"
+              quality={90}
+              priority
+              className="object-cover"
+            />
+          </div>
         </Reveal>
       </section>
 
