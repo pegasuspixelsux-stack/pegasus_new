@@ -105,7 +105,7 @@ export default function DealioPage() {
           aria-hidden="true"
         />
 
-        <Reveal className="relative max-w-[1260px] mx-auto text-left">
+        <Reveal className="relative max-w-[960px] mx-auto text-left">
           <Link
             href="/#soluciones"
             className="text-sm text-gray-300 light:text-gray-600 hover:text-white light:hover:text-gray-900 transition-colors"
@@ -130,7 +130,7 @@ export default function DealioPage() {
         </Reveal>
 
         {/* Hero image (the only image placeholder on this page) */}
-        <Reveal className="relative max-w-[1260px] mx-auto mt-12">
+        <Reveal className="relative max-w-[960px] mx-auto mt-12">
           <ImagePlaceholder caption="Mockup de alta fidelidad mostrando la interfaz de Dealio en un dispositivo móvil y de escritorio dentro de un showroom moderno" />
         </Reveal>
       </section>
